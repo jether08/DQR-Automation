@@ -28,11 +28,16 @@ public class GlobalVariable {
      */
     public static Object GloginUrl
      
+    /**
+     * <p>Profile Staging : Staging URL</p>
+     */
+    public static Object Url
+     
 
     static {
         def allVariables = [:]        
         allVariables.put('default', [:])
-        allVariables.put('Staging', allVariables['default'] + ['Gusername' : 'nora-qa', 'Gpassword' : 'Vf4WmEw!', 'GloginUrl' : 'http://apsite-staging.hidora.com/login.html'])
+        allVariables.put('Staging', allVariables['default'] + ['Gusername' : 'nora-qa', 'Gpassword' : 'Vf4WmEw!', 'GloginUrl' : 'http://apsite-staging.hidora.com/login.html', 'Url' : 'http://apsite-staging.hidora.com/'])
         
         String profileName = RunConfiguration.getExecutionProfile()
         
@@ -40,6 +45,7 @@ public class GlobalVariable {
         Gusername = selectedVariables['Gusername']
         Gpassword = selectedVariables['Gpassword']
         GloginUrl = selectedVariables['GloginUrl']
+        Url = selectedVariables['Url']
         
     }
 }

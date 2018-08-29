@@ -26,7 +26,7 @@ WebUI.maximizeWindow( //maximize the browser window
     )
 
 //Navigate to the site
-WebUI.navigateToUrl('http://apsite-staging.hidora.com/')
+WebUI.navigateToUrl(GlobalVariable.Url)
 
 //wait 30s for the page to load
 WebUI.waitForPageLoad(30)
@@ -46,10 +46,10 @@ WebUI.click(findTestObject('Object Repository/Login/button_Log In'))
 WebUI.delay(10)
 
 //get the value of the logged in user; if this fails, then this test case fails
-loggedinUser = WebUI.getText(findTestObject('Login/loggedin_user'),FailureHandling.STOP_ON_FAILURE)
+loggedinUser = WebUI.getText(findTestObject('Login/loggedin_user'), FailureHandling.STOP_ON_FAILURE)
 
 //convert text to lowercase
-loginuser = loggedinUser.toLowerCase() 
+loginuser = loggedinUser.toLowerCase()
 
 //Verify that the user displayed is the logged in user's username
 WebUI.verifyMatch(loginuser, GlobalVariable.Gusername, true)

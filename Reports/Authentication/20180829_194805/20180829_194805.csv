@@ -1,0 +1,62 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Authentication,Chrome 68.0.3440.106,Test cases for Authentication,2018-08-29 19:48:07,2018-08-29 19:51:49,3m - 42.141s,PASSED
+,,,,,,
+Test Cases/01 Authentication/Auth1,Chrome 68.0.3440.106,"User attempts login, which is successful.",2018-08-29 19:48:07,2018-08-29 19:49:37,1m - 29.842s,PASSED
+openBrowser,Chrome 68.0.3440.106,,2018-08-29 19:48:08,2018-08-29 19:48:13,4.770s,PASSED
+maximizeWindow,Chrome 68.0.3440.106,,2018-08-29 19:48:13,2018-08-29 19:48:14,1.222s,PASSED
+navigateToUrl,Chrome 68.0.3440.106,,2018-08-29 19:48:14,2018-08-29 19:48:44,30.332s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-29 19:48:44,2018-08-29 19:48:44,0.066s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-29 19:48:44,2018-08-29 19:48:56,11.798s,PASSED
+setText,Chrome 68.0.3440.106,,2018-08-29 19:48:56,2018-08-29 19:48:56,0.157s,PASSED
+setText,Chrome 68.0.3440.106,,2018-08-29 19:48:56,2018-08-29 19:48:56,0.125s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-29 19:48:56,2018-08-29 19:48:56,0.082s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-29 19:48:56,2018-08-29 19:49:06,10.022s,PASSED
+"Statement - loggedinUser = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Login/loggedin_user), STOP_ON_FAILURE)",Chrome 68.0.3440.106,,2018-08-29 19:49:06,2018-08-29 19:49:37,30.755s,PASSED
+Statement - loginuser = loggedinUser.toLowerCase(),Chrome 68.0.3440.106,,2018-08-29 19:49:37,2018-08-29 19:49:37,0.001s,PASSED
+verifyMatch,Chrome 68.0.3440.106,,2018-08-29 19:49:37,2018-08-29 19:49:37,0.013s,PASSED
+,,,,,,
+Test Cases/01 Authentication/Auth2,Chrome 68.0.3440.106,"User attempts login, which fails due to empty password value",2018-08-29 19:49:37,2018-08-29 19:50:10,32.895s,PASSED
+openBrowser,Chrome 68.0.3440.106,,2018-08-29 19:49:37,2018-08-29 19:49:41,3.877s,PASSED
+maximizeWindow,Chrome 68.0.3440.106,,2018-08-29 19:49:41,2018-08-29 19:49:42,1.145s,PASSED
+navigateToUrl,Chrome 68.0.3440.106,,2018-08-29 19:49:42,2018-08-29 19:50:01,19.113s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-29 19:50:01,2018-08-29 19:50:02,0.015s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-29 19:50:02,2018-08-29 19:50:10,8.298s,PASSED
+setText,Chrome 68.0.3440.106,,2018-08-29 19:50:10,2018-08-29 19:50:10,0.130s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-29 19:50:10,2018-08-29 19:50:10,0.082s,PASSED
+Statement - url = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl(),Chrome 68.0.3440.106,,2018-08-29 19:50:10,2018-08-29 19:50:10,0.023s,PASSED
+verifyMatch,Chrome 68.0.3440.106,,2018-08-29 19:50:10,2018-08-29 19:50:10,0.002s,PASSED
+,,,,,,
+Test Cases/01 Authentication/Auth3,Chrome 68.0.3440.106,"User attempts login, which fails due to empty userid value",2018-08-29 19:50:10,2018-08-29 19:50:43,32.634s,PASSED
+openBrowser,Chrome 68.0.3440.106,,2018-08-29 19:50:10,2018-08-29 19:50:13,2.849s,PASSED
+maximizeWindow,Chrome 68.0.3440.106,,2018-08-29 19:50:13,2018-08-29 19:50:14,1.125s,PASSED
+navigateToUrl,Chrome 68.0.3440.106,,2018-08-29 19:50:14,2018-08-29 19:50:32,18.253s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-29 19:50:32,2018-08-29 19:50:32,0.016s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-29 19:50:32,2018-08-29 19:50:42,9.974s,PASSED
+setText,Chrome 68.0.3440.106,,2018-08-29 19:50:42,2018-08-29 19:50:43,0.142s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-29 19:50:43,2018-08-29 19:50:43,0.073s,PASSED
+Statement - url = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl(),Chrome 68.0.3440.106,,2018-08-29 19:50:43,2018-08-29 19:50:43,0.007s,PASSED
+verifyMatch,Chrome 68.0.3440.106,,2018-08-29 19:50:43,2018-08-29 19:50:43,0.001s,PASSED
+,,,,,,
+Test Cases/01 Authentication/Auth4,Chrome 68.0.3440.106,"User attempts login, which fails due to incorrect userid",2018-08-29 19:50:43,2018-08-29 19:51:18,35.435s,PASSED
+openBrowser,Chrome 68.0.3440.106,,2018-08-29 19:50:43,2018-08-29 19:50:46,2.861s,PASSED
+maximizeWindow,Chrome 68.0.3440.106,,2018-08-29 19:50:46,2018-08-29 19:50:47,1.140s,PASSED
+navigateToUrl,Chrome 68.0.3440.106,,2018-08-29 19:50:47,2018-08-29 19:51:02,15.258s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-29 19:51:02,2018-08-29 19:51:02,0.021s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-29 19:51:02,2018-08-29 19:51:13,10.456s,PASSED
+setText,Chrome 68.0.3440.106,,2018-08-29 19:51:13,2018-08-29 19:51:13,0.155s,PASSED
+setText,Chrome 68.0.3440.106,,2018-08-29 19:51:13,2018-08-29 19:51:13,0.119s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-29 19:51:13,2018-08-29 19:51:13,0.078s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-29 19:51:13,2018-08-29 19:51:18,5.001s,PASSED
+verifyElementText,Chrome 68.0.3440.106,,2018-08-29 19:51:18,2018-08-29 19:51:18,0.144s,PASSED
+,,,,,,
+Test Cases/01 Authentication/Auth5,Chrome 68.0.3440.106,"User attempts login, which fails due to incorrect password",2018-08-29 19:51:18,2018-08-29 19:51:48,30.132s,PASSED
+openBrowser,Chrome 68.0.3440.106,,2018-08-29 19:51:18,2018-08-29 19:51:21,3.036s,PASSED
+maximizeWindow,Chrome 68.0.3440.106,,2018-08-29 19:51:21,2018-08-29 19:51:23,1.142s,PASSED
+navigateToUrl,Chrome 68.0.3440.106,,2018-08-29 19:51:23,2018-08-29 19:51:38,15.288s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-29 19:51:38,2018-08-29 19:51:38,0.016s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-29 19:51:38,2018-08-29 19:51:43,5.073s,PASSED
+setText,Chrome 68.0.3440.106,,2018-08-29 19:51:43,2018-08-29 19:51:43,0.126s,PASSED
+setText,Chrome 68.0.3440.106,,2018-08-29 19:51:43,2018-08-29 19:51:43,0.119s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-29 19:51:43,2018-08-29 19:51:43,0.082s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-29 19:51:43,2018-08-29 19:51:48,5.002s,PASSED
+verifyElementText,Chrome 68.0.3440.106,,2018-08-29 19:51:48,2018-08-29 19:51:48,0.064s,PASSED

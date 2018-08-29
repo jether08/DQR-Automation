@@ -26,7 +26,7 @@ WebUI.maximizeWindow( //maximize the browser window
     )
 
 //Navigate to the site
-WebUI.navigateToUrl('http://apsite-staging.hidora.com/')
+WebUI.navigateToUrl(GlobalVariable.Url)
 
 //wait 30s for the page to load
 WebUI.waitForPageLoad(30)

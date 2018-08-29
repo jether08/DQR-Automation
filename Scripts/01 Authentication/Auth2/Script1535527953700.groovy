@@ -26,7 +26,7 @@ WebUI.openBrowser('')
 WebUI.maximizeWindow()
 
 //Navigate to the site
-WebUI.navigateToUrl('http://apsite-staging.hidora.com/')
+WebUI.navigateToUrl(GlobalVariable.Url)
 
 //wait 30s for the page to load
 WebUI.waitForPageLoad(30)
@@ -42,5 +42,8 @@ WebUI.click(findTestObject('Object Repository/Login/button_Log In'))
 
 //Verify if the user is still in the login page
 url = WebUI.getUrl()
-WebUI.verifyMatch(url,GlobalVariable.GloginUrl, true)
+
+WebUI.verifyMatch(url, GlobalVariable.GloginUrl, true)
+
+WebUI.delay(3)
 
