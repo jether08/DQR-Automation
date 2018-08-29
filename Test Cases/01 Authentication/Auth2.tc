@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User attempts login, which fails due to empty password value</description>
+   <name>Auth2</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8ba87cba-eab2-404a-8b90-0e02be86966f</testCaseGuid>
+   <variable>
+      <defaultValue>'nora-qa'</defaultValue>
+      <description></description>
+      <id>550e2c86-56f5-43a9-b58d-d051c86ab84e</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User attempts login, which fails due to empty userid value</description>
+   <name>Auth3</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8e1e8fd5-e7d4-4f9c-a2ec-e8b44a1c8fba</testCaseGuid>
+   <variable>
+      <defaultValue>'luke'</defaultValue>
+      <description></description>
+      <id>fac3f15f-c652-44c1-adcb-e19923e6d117</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'123456'</defaultValue>
+      <description></description>
+      <id>4daa8520-76a0-490b-b943-79d7fa7c3eb7</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

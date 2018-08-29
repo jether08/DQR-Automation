@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User attempts login, which is successful.</description>
+   <name>Auth1</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a9e57c97-3102-47b5-a060-a20aa0e7f9b6</testCaseGuid>
+   <variable>
+      <defaultValue>'nora-qa'</defaultValue>
+      <description></description>
+      <id>e2a102c6-fd5f-46cb-8cd1-ab7ad64ca226</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'Vf4WmEw!'</defaultValue>
+      <description></description>
+      <id>3ac7bdae-4b57-47f4-9b8d-a868ee2f531c</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>
