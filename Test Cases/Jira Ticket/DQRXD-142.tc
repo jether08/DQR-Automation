@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Currency pair validations (buy limit order)</description>
+   <name>DQRXD-142</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d8513dcc-a954-4b8c-aeb9-3ed0d26adb94</testCaseGuid>
+</TestCaseEntity>
