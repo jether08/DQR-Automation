@@ -29,6 +29,12 @@ public class ValidLogin {
 
 	@Keyword
 	def login() {
+		
+		//Open the browser
+		WebUI.openBrowser('')
+		
+		//maximize the browser window
+		WebUI.maximizeWindow ()
 
 		//Navigate to the site
 		WebUI.navigateToUrl(GlobalVariable.Url)
