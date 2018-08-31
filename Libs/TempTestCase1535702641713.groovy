@@ -13,7 +13,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.mobile.contribution.MobileDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\arcillas\\AppData\\Local\\Temp\\Katalon\\Test Cases\\01 Authentication\\Auth1\\20180829_190724\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\arcillas\\AppData\\Local\\Temp\\Katalon\\Test Cases\\01 Authentication\\Auth1\\20180831_160401\\execution.properties')
 
 TestCaseMain.beforeStart()
 

@@ -5,7 +5,7 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <lastRun>2018-08-29T19:57:52</lastRun>
-   <mailRecipient>jether.arcillas@dqr-group.com;arcillas.noraliza@dqr-group.com;</mailRecipient>
+   <mailRecipient>jether.arcillas@dqr-group.com;arcillas.noraliza@dqr-group.com;arcillasjether@gmail.com;</mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
