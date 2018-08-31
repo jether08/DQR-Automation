@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Staging</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>username used to log in</description>
+      <initValue>'nora-qa'</initValue>
+      <name>Gusername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>password for nora-qa</description>
+      <initValue>'Vf4WmEw!'</initValue>
+      <name>Gpassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://apsite-staging.hidora.com/login.html'</initValue>
+      <name>GloginUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Staging URL</description>
+      <initValue>'http://apsite-staging.hidora.com/'</initValue>
+      <name>Url</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

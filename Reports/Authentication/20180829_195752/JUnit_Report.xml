@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Authentication" time="212" tests="5" failures="0" errors="0">
+   <testsuite name="Authentication" tests="5" failures="0" errors="0" time="212" timestamp="2018-08-29 19:57:55" hostname="arcillas - 10.1.5.144" id="Test Suites/Authentication">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\arcillas\\git\\DQR-Automation\\Reports\\Authentication\\20180829_195752"/>
+         <property name="logFiles" value="C:\\Users\\arcillas\\git\\DQR-Automation\\Reports\\Authentication\\20180829_195752\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="arcillas - 10.1.5.144"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.6.1.1"/>
+         <property name="browser" value="Chrome 68.0.3440.106"/>
+         <property name="hostAddress" value="10.1.5.144"/>
+         <property name="sessionId" value="9b8268195f1c6060833f46835630ca68"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/01 Authentication/Auth1" classname="Test Cases/01 Authentication/Auth1" status="PASSED">
+         <system-out><![CDATA[2018-08-29 19:57:55 - [TEST_CASE][PASSED] - Test Cases/01 Authentication/Auth1: Test Cases/01 Authentication/Auth1
+
+2018-08-29 19:57:56 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-08-29 19:57:59 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-08-29 19:57:59 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-08-29 19:58:01 - [MESSAGE][PASSED] - Current window maximized
+
+2018-08-29 19:58:01 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://apsite-staging.hidora.com/' successfully
+
+2018-08-29 19:58:16 - [MESSAGE][PASSED] - Navigate to 'http://apsite-staging.hidora.com/' successfully
+
+2018-08-29 19:58:16 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-29 19:58:16 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-29 19:58:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/a_Login' is clicked on
+
+2018-08-29 19:58:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/a_Login' is clicked on
+
+2018-08-29 19:58:21 - [TEST_STEP][PASSED] - setText: Text 'nora-qa' is set on object 'Object Repository/Login/input_name'
+
+2018-08-29 19:58:21 - [MESSAGE][PASSED] - Text 'nora-qa' is set on object 'Object Repository/Login/input_name'
+
+2018-08-29 19:58:21 - [TEST_STEP][PASSED] - setText: Text 'Vf4WmEw!' is set on object 'Object Repository/Login/input_password'
+
+2018-08-29 19:58:21 - [MESSAGE][PASSED] - Text 'Vf4WmEw!' is set on object 'Object Repository/Login/input_password'
+
+2018-08-29 19:58:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/button_Log In' is clicked on
+
+2018-08-29 19:58:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/button_Log In' is clicked on
+
+2018-08-29 19:58:22 - [TEST_STEP][PASSED] - delay: Delayed 10 second(s)
+
+2018-08-29 19:58:32 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2018-08-29 19:58:32 - [TEST_STEP][PASSED] - Statement - loggedinUser = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Login/loggedin_user), STOP_ON_FAILURE): Text of object 'Object Repository/Login/loggedin_user' is: 'NORA-QA'
+
+2018-08-29 19:58:45 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login/loggedin_user' is: 'NORA-QA'
+
+2018-08-29 19:58:45 - [TEST_STEP][PASSED] - Statement - loginuser = loggedinUser.toLowerCase(): null
+
+2018-08-29 19:58:45 - [TEST_STEP][PASSED] - verifyMatch: Actual text 'nora-qa' and expected text 'nora-qa' are matched  using regular expression
+
+2018-08-29 19:58:45 - [MESSAGE][PASSED] - Actual text 'nora-qa' and expected text 'nora-qa' are matched  using regular expression]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/01 Authentication/Auth2" classname="Test Cases/01 Authentication/Auth2" status="PASSED">
+         <system-out><![CDATA[2018-08-29 19:58:45 - [TEST_CASE][PASSED] - Test Cases/01 Authentication/Auth2: Test Cases/01 Authentication/Auth2
+
+2018-08-29 19:58:45 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-08-29 19:58:45 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-08-29 19:58:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-08-29 19:58:48 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-08-29 19:58:49 - [MESSAGE][PASSED] - Current window maximized
+
+2018-08-29 19:58:49 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://apsite-staging.hidora.com/' successfully
+
+2018-08-29 19:58:59 - [MESSAGE][PASSED] - Navigate to 'http://apsite-staging.hidora.com/' successfully
+
+2018-08-29 19:58:59 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-29 19:58:59 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-29 19:58:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/a_Login' is clicked on
+
+2018-08-29 19:59:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/a_Login' is clicked on
+
+2018-08-29 19:59:04 - [TEST_STEP][PASSED] - setText: Text 'nora-qa' is set on object 'Object Repository/Login/input_name'
+
+2018-08-29 19:59:04 - [MESSAGE][PASSED] - Text 'nora-qa' is set on object 'Object Repository/Login/input_name'
+
+2018-08-29 19:59:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/button_Log In' is clicked on
+
+2018-08-29 19:59:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/button_Log In' is clicked on
+
+2018-08-29 19:59:04 - [TEST_STEP][PASSED] - Statement - url = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl(): Current window's url is: 'http://apsite-staging.hidora.com/login.html'
+
+2018-08-29 19:59:04 - [MESSAGE][PASSED] - Current window's url is: 'http://apsite-staging.hidora.com/login.html'
+
+2018-08-29 19:59:04 - [TEST_STEP][PASSED] - verifyMatch: Actual text 'http://apsite-staging.hidora.com/login.html' and expected text 'http://apsite-staging.hidora.com/login.html' are matched  using regular expression
+
+2018-08-29 19:59:04 - [MESSAGE][PASSED] - Actual text 'http://apsite-staging.hidora.com/login.html' and expected text 'http://apsite-staging.hidora.com/login.html' are matched  using regular expression
+
+2018-08-29 19:59:04 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-29 19:59:07 - [MESSAGE][PASSED] - Delayed 3 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/01 Authentication/Auth3" classname="Test Cases/01 Authentication/Auth3" status="PASSED">
+         <system-out><![CDATA[2018-08-29 19:59:07 - [TEST_CASE][PASSED] - Test Cases/01 Authentication/Auth3: Test Cases/01 Authentication/Auth3
+
+2018-08-29 19:59:07 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-08-29 19:59:07 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-08-29 19:59:11 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-08-29 19:59:11 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-08-29 19:59:12 - [MESSAGE][PASSED] - Current window maximized
+
+2018-08-29 19:59:12 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://apsite-staging.hidora.com/' successfully
+
+2018-08-29 19:59:28 - [MESSAGE][PASSED] - Navigate to 'http://apsite-staging.hidora.com/' successfully
+
+2018-08-29 19:59:28 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-29 19:59:28 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-29 19:59:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/a_Login' is clicked on
+
+2018-08-29 19:59:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/a_Login' is clicked on
+
+2018-08-29 19:59:35 - [TEST_STEP][PASSED] - setText: Text 'Vf4WmEw!' is set on object 'Object Repository/Login/input_password'
+
+2018-08-29 19:59:35 - [MESSAGE][PASSED] - Text 'Vf4WmEw!' is set on object 'Object Repository/Login/input_password'
+
+2018-08-29 19:59:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/button_Log In' is clicked on
+
+2018-08-29 19:59:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/button_Log In' is clicked on
+
+2018-08-29 19:59:35 - [TEST_STEP][PASSED] - Statement - url = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl(): Current window's url is: 'http://apsite-staging.hidora.com/login.html'
+
+2018-08-29 19:59:35 - [MESSAGE][PASSED] - Current window's url is: 'http://apsite-staging.hidora.com/login.html'
+
+2018-08-29 19:59:35 - [TEST_STEP][PASSED] - verifyMatch: Actual text 'http://apsite-staging.hidora.com/login.html' and expected text 'http://apsite-staging.hidora.com/login.html' are matched  using regular expression
+
+2018-08-29 19:59:35 - [MESSAGE][PASSED] - Actual text 'http://apsite-staging.hidora.com/login.html' and expected text 'http://apsite-staging.hidora.com/login.html' are matched  using regular expression
+
+2018-08-29 19:59:35 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-29 19:59:38 - [MESSAGE][PASSED] - Delayed 3 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/01 Authentication/Auth4" classname="Test Cases/01 Authentication/Auth4" status="PASSED">
+         <system-out><![CDATA[2018-08-29 19:59:38 - [TEST_CASE][PASSED] - Test Cases/01 Authentication/Auth4: Test Cases/01 Authentication/Auth4
+
+2018-08-29 19:59:38 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-08-29 19:59:38 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-08-29 19:59:44 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-08-29 19:59:44 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-08-29 19:59:45 - [MESSAGE][PASSED] - Current window maximized
+
+2018-08-29 19:59:45 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://apsite-staging.hidora.com/' successfully
+
+2018-08-29 20:00:11 - [MESSAGE][PASSED] - Navigate to 'http://apsite-staging.hidora.com/' successfully
+
+2018-08-29 20:00:11 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-29 20:00:11 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-29 20:00:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/a_Login' is clicked on
+
+2018-08-29 20:00:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/a_Login' is clicked on
+
+2018-08-29 20:00:23 - [TEST_STEP][PASSED] - setText: Text 'incorrectuser' is set on object 'Object Repository/Login/input_name'
+
+2018-08-29 20:00:23 - [MESSAGE][PASSED] - Text 'incorrectuser' is set on object 'Object Repository/Login/input_name'
+
+2018-08-29 20:00:23 - [TEST_STEP][PASSED] - setText: Text 'Vf4WmEw!' is set on object 'Object Repository/Login/input_password'
+
+2018-08-29 20:00:23 - [MESSAGE][PASSED] - Text 'Vf4WmEw!' is set on object 'Object Repository/Login/input_password'
+
+2018-08-29 20:00:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/button_Log In' is clicked on
+
+2018-08-29 20:00:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/button_Log In' is clicked on
+
+2018-08-29 20:00:23 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-08-29 20:00:28 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-08-29 20:00:28 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/Login/error_mesage' are matched.
+
+2018-08-29 20:00:28 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Login/error_mesage' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/01 Authentication/Auth5" classname="Test Cases/01 Authentication/Auth5" status="PASSED">
+         <system-out><![CDATA[2018-08-29 20:00:28 - [TEST_CASE][PASSED] - Test Cases/01 Authentication/Auth5: Test Cases/01 Authentication/Auth5
+
+2018-08-29 20:00:28 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-08-29 20:00:28 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-08-29 20:00:34 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-08-29 20:00:34 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-08-29 20:00:35 - [MESSAGE][PASSED] - Current window maximized
+
+2018-08-29 20:00:35 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://apsite-staging.hidora.com/' successfully
+
+2018-08-29 20:00:57 - [MESSAGE][PASSED] - Navigate to 'http://apsite-staging.hidora.com/' successfully
+
+2018-08-29 20:00:57 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-29 20:00:57 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-29 20:00:57 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/a_Login' is clicked on
+
+2018-08-29 20:01:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/a_Login' is clicked on
+
+2018-08-29 20:01:17 - [TEST_STEP][PASSED] - setText: Text 'nora-qa' is set on object 'Object Repository/Login/input_name'
+
+2018-08-29 20:01:17 - [MESSAGE][PASSED] - Text 'nora-qa' is set on object 'Object Repository/Login/input_name'
+
+2018-08-29 20:01:17 - [TEST_STEP][PASSED] - setText: Text 'incorrectpw' is set on object 'Object Repository/Login/input_password'
+
+2018-08-29 20:01:17 - [MESSAGE][PASSED] - Text 'incorrectpw' is set on object 'Object Repository/Login/input_password'
+
+2018-08-29 20:01:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login/button_Log In' is clicked on
+
+2018-08-29 20:01:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/button_Log In' is clicked on
+
+2018-08-29 20:01:22 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-08-29 20:01:27 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-08-29 20:01:27 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/Login/error_mesage' are matched.
+
+2018-08-29 20:01:27 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Login/error_mesage' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-08-29 19:57:55 - [TEST_SUITE][PASSED] - Authentication: Test Cases/01 Authentication/Auth5]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
