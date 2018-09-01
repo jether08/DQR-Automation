@@ -28,11 +28,27 @@ import internal.GlobalVariable as GlobalVariable
 //Call Login custom keyword
 CustomKeywords.'utility.ValidLogin.login'()
 
+WebUI.delay(15)
 WebUI.click(findTestObject('trade.html/Currency Selector'))
 
+//Call Select XRPBTC custom keyword
+CustomKeywords.'utility.selectXRPBTC.xrpbtc'()
+
+/*WebUI.click(findTestObject('trade.html/Currency Selector'))
+
 WebDriver driver = DriverFactory.getWebDriver()
-def currencies = driver.findElements(By.cssSelector('.li.instrument-symbol'))
+def currencies = driver.findElements(By.cssSelector('.dropdown-menu.ticker li'))
+currencies.
 def count = currencies.size()
 println(count)
 
+currencies.each({def currency
+	WebUI.click(findTestObject('trade.html/Currency Selector'))
+	currency.click()
+	
+	
+	
+	
+}
+)*/
 

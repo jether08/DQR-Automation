@@ -7,3 +7,7 @@
 def static "utility.ValidLogin.login"() {
     (new utility.ValidLogin()).login()
 }
+
+def static "utility.selectXRPBTC.xrpbtc"() {
+    (new utility.selectXRPBTC()).xrpbtc()
+}
