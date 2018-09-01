@@ -50,7 +50,7 @@ public class SelectCurrency {
 		//Get the currencies above, below, and in the chart
 		String above = WebUI.getText(findTestObject('trade.html/Currency Above'))
 		String below = WebUI.getText(findTestObject('trade.html/Currency Below'))
-		String chart = WebUI.getText(findTestObject('trade.html/Currency Below'))
+		String chart = WebUI.getText(findTestObject('trade.html/Currency in chart'))
 		
 		//Verify if currency above matches the secondary currency
 		WebUI.verifyMatch(above, secondary, true)

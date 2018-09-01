@@ -30,8 +30,52 @@ CustomKeywords.'utility.ValidLogin.login'()
 WebUI.delay(15)
 WebUI.click(findTestObject('trade.html/Currency Selector'))
 
-//Call Select XRPBTC custom keyword
-CustomKeywords.'utility.SelectCurrency.xrpbtc'()
+//OPTION 1: Call Select Currency custom keyword
+//CustomKeywords.'utility.SelectCurrency.xrpbtc'()
+
+//OPTION 2: Loop through the currencies in the list
+WebDriver driver = DriverFactory.getWebDriver()
+
+//Store all list items
+WebElement currenciesUL = driver.findElements(By.xpath('/html/body/div[1]/div[2]/header2/div[1]/div/ul'))
+List <WebElement> currencies = currenciesUL.findElements(By.tagName('li')) 
+
+//for(WebElement c:currencies){
+currencies.each({def c->
+	//select currency
+	c.click()
+	
+	//get the text value of the selected currency and print it for later comparison
+	String selected = c.getText()
+	println(selected)
+	
+	//get the secondary currency
+	String secondary = selected.substring(3,5)
+	//get the  primary currency
+	String primary = selected.substring(0, 2)
+	
+	//Get the currencies above, below, and in the chart
+	String above = WebUI.getText(findTestObject('trade.html/Currency Above'))
+	String below = WebUI.getText(findTestObject('trade.html/Currency Below'))
+	String chart = WebUI.getText(findTestObject('trade.html/Currency in chart'))
+	
+	//Verify if currency above matches the secondary currency
+	WebUI.verifyMatch(above, secondary, true)
+	
+	//Verify if currency below matches the primary currency
+	WebUI.verifyMatch(below, primary, true)
+	
+	//Verify if currency in the chart contains the selected currency text
+	if (chart.contains(selected)){
+		println("Currency in the chart is correct.")
+	}
+	else{
+		FailureHandling.STOP_ON_FAILURE
+	}
+	
+	WebUI.click(findTestObject('trade.html/Currency Selector'))
+
+})
 
 
 
