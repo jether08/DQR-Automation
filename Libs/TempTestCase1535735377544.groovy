@@ -13,9 +13,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.mobile.contribution.MobileDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\arcillas\\AppData\\Local\\Temp\\Katalon\\Test Cases\\01 Authentication\\Auth1\\20180831_160305\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\Jeth\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Jira Ticket\\DQRXD-142\\20180901_010937\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/01 Authentication/Auth1', new TestCaseBinding('Test Cases/01 Authentication/Auth1',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Jira Ticket/DQRXD-142', new TestCaseBinding('Test Cases/Jira Ticket/DQRXD-142',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

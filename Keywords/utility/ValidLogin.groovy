@@ -29,10 +29,10 @@ public class ValidLogin {
 
 	@Keyword
 	def login() {
-		
+
 		//Open the browser
 		WebUI.openBrowser('')
-		
+
 		//maximize the browser window
 		WebUI.maximizeWindow ()
 
