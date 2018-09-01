@@ -5,6 +5,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import org.openqa.selenium.By as By
 import org.openqa.selenium.By.ByCssSelector as ByCssSelector
 import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -30,11 +31,17 @@ WebUI.delay(15)
 WebUI.click(findTestObject('trade.html/Currency Selector'))
 
 //Call Select XRPBTC custom keyword
-CustomKeywords.'utility.selectXRPBTC.xrpbtc'()
+CustomKeywords.'utility.SelectCurrency.xrpbtc'()
 
-/*WebUI.click(findTestObject('trade.html/Currency Selector'))
 
-WebDriver driver = DriverFactory.getWebDriver()
+
+
+
+
+
+
+
+/*WebDriver driver = DriverFactory.getWebDriver()
 <<<<<<< HEAD
 def currencies = driver.findElements(By.cssSelector('.dropdown-menu.ticker li'))
 currencies.
@@ -57,7 +64,5 @@ currencies.each({def currency
 	
 }
 )*/
-
-WebUI.closeBrowser()
 
 

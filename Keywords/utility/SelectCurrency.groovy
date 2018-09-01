@@ -31,24 +31,41 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory
 
-public class selectXRPBTC {
+public class SelectCurrency {
 	@Keyword
-	
+
 	def xrpbtc() {
-			
+
 		WebDriver driver = DriverFactory.getWebDriver()
+		
+		//Select XRPBTC
 		WebElement select = driver.findElement(By.xpath('/html/body/div[1]/div[2]/header2/div[1]/div/ul/li[2]'))
-		//WebUI.click(findTestObject('trade.html/XRPBTC'))
-		
 		select.click()
-		def selected = WebUI.getText(select)
-		println(selected)
 		
-		/*def coin = WebUI.getText(findTestObject('trade.html/XRPBTC'))
-		println(coin)
-		def chart = WebUI.getText(findTestObject('trade.html/Currency in chart'))
-		WebUI.verifyMatch(chart, coin, true)*/
+		//Store primary and secondary currencies in variables
+		String currency = "XRPBTC"
+		String primary = "XRP"
+		String secondary = "BTC"
 		
+		//Get the currencies above, below, and in the chart
+		String above = WebUI.getText(findTestObject('trade.html/Currency Above'))
+		String below = WebUI.getText(findTestObject('trade.html/Currency Below'))
+		String chart = WebUI.getText(findTestObject('trade.html/Currency Below'))
 		
+		//Verify if currency above matches the secondary currency
+		WebUI.verifyMatch(above, secondary, true)
+		
+		//Verify if currency below matches the primary currency
+		WebUI.verifyMatch(below, primary, true)
+		
+		//Verify if currency in the chart contains the selected currency text
+		if (chart.contains(currency)){
+			println("Currency in the chart is correct.")
+		}
+		else{
+			FailureHandling.STOP_ON_FAILURE
+		}	
+
+
 	}
 }
