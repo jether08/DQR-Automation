@@ -56,3 +56,5 @@ loginuser = loggedinUser.toLowerCase()
 //Verify that the user displayed is the logged in user's username
 WebUI.verifyMatch(loginuser, GlobalVariable.Gusername, true)
 
+WebUI.comment('User Successfuly Login')
+

@@ -48,3 +48,6 @@ WebUI.delay(5)
 //Wait for 2s and verify if error message is displayed
 WebUI.verifyElementText(findTestObject('Login/error_mesage'), 'Wrong credentials')
 
+WebUI.comment('User Failed to Login due to Incorrect userid')
+
+

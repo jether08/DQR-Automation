@@ -47,3 +47,5 @@ WebUI.verifyMatch(url, GlobalVariable.GloginUrl, true)
 
 WebUI.delay(3)
 
+WebUI.comment('User Failed to Login due to Empty Password')
+
