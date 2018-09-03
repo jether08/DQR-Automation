@@ -31,17 +31,19 @@ WebUI.delay(15)
 WebUI.click(findTestObject('trade.html/Currency Selector'))
 
 //OPTION 1: Call Select Currency custom keyword
-//CustomKeywords.'utility.SelectCurrency.xrpbtc'()
+CustomKeywords.'utility.SelectCurrency.xrpbtc'()
 
-//OPTION 2: Loop through the currencies in the list
+
+
+/*/OPTION 2: Loop through the currencies in the list
 WebDriver driver = DriverFactory.getWebDriver()
 
 //Store all list items
-WebElement currenciesUL = driver.findElements(By.xpath('/html/body/div[1]/div[2]/header2/div[1]/div/ul'))
-List <WebElement> currencies = currenciesUL.findElements(By.tagName('li')) 
+def currencies = driver.findElements(By.cssSelector('.dropdown-menu.ticker li'))
+//List <WebElement> currencies = currenciesUL.findElements(By.tagName('li')) 
 
-//for(WebElement c:currencies){
-currencies.each({def c->
+for(WebElement c:currencies){
+//currencies[1].each({def c->
 	//select currency
 	c.click()
 	
@@ -57,7 +59,7 @@ currencies.each({def c->
 	//Get the currencies above, below, and in the chart
 	String above = WebUI.getText(findTestObject('trade.html/Currency Above'))
 	String below = WebUI.getText(findTestObject('trade.html/Currency Below'))
-	String chart = WebUI.getText(findTestObject('trade.html/Currency in chart'))
+	String chart = WebUI.getText(findTestObject('null'))
 	
 	//Verify if currency above matches the secondary currency
 	WebUI.verifyMatch(above, secondary, true)
@@ -75,7 +77,7 @@ currencies.each({def c->
 	
 	WebUI.click(findTestObject('trade.html/Currency Selector'))
 
-})
+}
 
 
 

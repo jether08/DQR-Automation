@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Currency in chart</name>
+   <name>Price Per Label</name>
    <tag></tag>
-   <elementGuidId>beec7f88-5e0c-4504-9358-54ca4d340b90</elementGuidId>
+   <elementGuidId>4517b859-23c7-4356-8eca-39b07b7a8d22</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;chart-area&quot;]/div/div[3]/table/tbody/tr[1]/td[2]/div/div[3]/div[1]/span</value>
+      <value>//*[@id=&quot;trigger-content-1&quot;]/div/div/div/div/div/div/div[2]/div[2]/label</value>
    </webElementProperties>
 </WebElementEntity>
