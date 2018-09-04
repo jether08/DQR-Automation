@@ -41,7 +41,7 @@ WebUI.setText(findTestObject('Object Repository/Login/input_name'), GlobalVariab
 WebUI.setText(findTestObject('Login/input_password'), 'incorrectpw')
 
 //Click Login button
-WebUI.click(findTestObject('Object Repository/Login/button_Log In'))
+WebUI.click(findTestObject('Login/button_Log_In'))
 
 WebUI.delay(5)
 

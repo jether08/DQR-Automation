@@ -27,7 +27,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 //Call Login custom keyword
-CustomKeywords.'utility.ValidLogin.login'()
+CustomKeywords.'utility.ValidLogin.Level4Login'()
 
 
 WebUI.delay(10)

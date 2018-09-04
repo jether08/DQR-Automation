@@ -24,4 +24,14 @@
       <initValue>'http://apsite-staging.hidora.com/'</initValue>
       <name>Url</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>username used to log-in level 0</description>
+      <initValue>'jether-qa1'</initValue>
+      <name>Gusername0</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>password for jether-qa1</description>
+      <initValue>'Jether08'</initValue>
+      <name>Gpassword0</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

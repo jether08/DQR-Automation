@@ -28,7 +28,7 @@ import WebUiBuiltInKeywords as WebUI
 public class ValidLogin {
 
 	@Keyword
-	def login() {
+	def Level4Login() {
 
 		//Open the browser
 		WebUI.openBrowser('')
@@ -52,7 +52,37 @@ public class ValidLogin {
 		WebUI.setText(findTestObject('Login/input_password'), GlobalVariable.Gpassword)
 
 		//Click Login button
-		WebUI.click(findTestObject('Object Repository/Login/button_Log In'))
+		WebUI.click(findTestObject('Login/button_Log_In'))
 	}
+	
+	@Keyword
+	def Level0Login() {
+
+		//Open the browser
+		WebUI.openBrowser('')
+
+		//maximize the browser window
+		WebUI.maximizeWindow ()
+
+		//Navigate to the site
+		WebUI.navigateToUrl(GlobalVariable.Url)
+
+		//wait 30s for the page to load
+		WebUI.waitForPageLoad(30)
+
+		//Click Login button
+		WebUI.click(findTestObject('Object Repository/Login/a_Login'))
+
+		//Input valid username
+		WebUI.setText(findTestObject('Object Repository/Login/input_name'), GlobalVariable.Gusername0)
+
+		//Input valid password
+		WebUI.setText(findTestObject('Login/input_password'), GlobalVariable.Gpassword0)
+
+		//Click Login button
+		WebUI.click(findTestObject('Login/button_Log_In'))
+	}
+	
+	
 }
 

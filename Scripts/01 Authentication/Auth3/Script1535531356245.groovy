@@ -38,7 +38,7 @@ WebUI.click(findTestObject('Object Repository/Login/a_Login'))
 WebUI.setText(findTestObject('Login/input_password'), GlobalVariable.Gpassword)
 
 //Click Login button
-WebUI.click(findTestObject('Object Repository/Login/button_Log In'))
+WebUI.click(findTestObject('Login/button_Log_In'))
 
 //Verify if the user is still in the login page
 url = WebUI.getUrl()

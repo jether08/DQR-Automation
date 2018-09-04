@@ -1,57 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Login</name>
+   <name>button_Log_In</name>
    <tag></tag>
-   <elementGuidId>8a66de76-44b6-47e7-8c0c-f0c127850d21</elementGuidId>
+   <elementGuidId>c5a68eaf-7c52-4e63-87e4-5934d722b859</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/header/div/div/div[1]/div[3]/div/div[2]/a[1][count(. | //a[@href = 'login.html' and (text() = 'Login' or . = 'Login')]) = count(//a[@href = 'login.html' and (text() = 'Login' or . = 'Login')])]</value>
+         <value>//*[@id=&quot;login&quot;]/div[7]/button/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>href</name>
+      <name>type</name>
       <type>Main</type>
-      <value>login.html</value>
+      <value>submit</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>login-btn signin hide-loggedin</value>
+      <value>btn btn-blue wait</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ap-translate</name>
-      <type>Main</type>
-      <value>HOME_DIRECT.LOGIN</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Login</value>
+      <value>
+                Log In
+            </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/header/div/div/div[1]/div[3]/div/div[2]/a[1]</value>
+      <value>//*[@id=&quot;login&quot;]/div[7]/button/span</value>
    </webElementProperties>
 </WebElementEntity>
