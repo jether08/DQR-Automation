@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//iframe[@src = '/libs/charting_library_new/static/tv-chart.html#localserver=1&amp;symbol=XRPBTC&amp;interval=D&amp;toolbarbg=071B2F&amp;hideSymbolSearch=false&amp;hideSideToolbar=false&amp;enabledStudies=%5B%5D&amp;disabledStudies=%5B%5D&amp;widgetbar=%7B%22datawindow%22%3Afalse%2C%22details%22%3Afalse%2C%22watchlist%22%3Afalse%2C%22watchlist_settings%22%3A%7B%22default_symbols%22%3A%5B%5D%7D%7D&amp;timeFrames=%5B%7B%22text%22%3A%2215%22%2C%22resolution%22%3A%2215%22%7D%2C%7B%22text%22%3A%221h%22%2C%22resolution%22%3A%2260%22%7D%2C%7B%22text%22%3A%221D%22%2C%22resolution%22%3A%22D%22%7D%2C%7B%22text%22%3A%221W%22%2C%22resolution%22%3A%22W%22%7D%2C%7B%22text%22%3A%221Mo%22%2C%22resolution%22%3A%22M%22%7D%5D&amp;disableLogo=true&amp;locale=en&amp;uid=tradingview_2a43a&amp;clientId=0&amp;userId=0&amp;chartsStorageVer=1.0&amp;customCSS=%2Fassets%2Fcss%2Fchart.css&amp;debug=false&amp;timezone=exchange']</value>
+         <value>//*[@id=&quot;tradingview_46ed0&quot;]/iframe</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -34,7 +34,7 @@
       <value>tradingview_50a60</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
@@ -62,10 +62,10 @@
       <value>no</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tradingview_50a60&quot;)</value>
+      <value>//*[@id=&quot;tradingview_46ed0&quot;]/iframe</value>
    </webElementProperties>
 </WebElementEntity>

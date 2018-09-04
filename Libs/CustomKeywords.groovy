@@ -4,8 +4,12 @@
  */
 
 
-def static "utility.ValidLogin.login"() {
-    (new utility.ValidLogin()).login()
+def static "utility.ValidLogin.Level4Login"() {
+    (new utility.ValidLogin()).Level4Login()
+}
+
+def static "utility.ValidLogin.Level0Login"() {
+    (new utility.ValidLogin()).Level0Login()
 }
 
 def static "utility.SelectCurrency.xrpbtc"() {
