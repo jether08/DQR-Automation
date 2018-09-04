@@ -12,6 +12,10 @@ def static "utility.ValidLogin.Level0Login"() {
     (new utility.ValidLogin()).Level0Login()
 }
 
+def static "utility.SwitchiFrame.chart"() {
+    (new utility.SwitchiFrame()).chart()
+}
+
 def static "utility.SelectCurrency.xrpbtc"() {
     (new utility.SelectCurrency()).xrpbtc()
 }

@@ -31,7 +31,8 @@ WebUI.delay(15)
 WebUI.click(findTestObject('trade.html/Currency Selector'))
 
 //OPTION 1: Call Select Currency custom keyword
-CustomKeywords.'utility.SelectCurrency.xrpbtc'()
+//CustomKeywords.'utility.SelectCurrency.xrpbtc'()
+CustomKeywords.'utility.SwitchiFrame.chart'()
 
 
 
