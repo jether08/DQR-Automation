@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Testing Deposit function (KYC level 4)</description>
+   <name>DQRXD-147</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4d9baa8d-7b05-4999-b426-72f688f00d88</testCaseGuid>
+   <variable>
+      <defaultValue>'Ripple'</defaultValue>
+      <description></description>
+      <id>bc5c65fc-d3db-43cc-8ac0-e2b6bb9b7a99</id>
+      <masked>false</masked>
+      <name>MoneyValue</name>
+   </variable>
+   <variable>
+      <defaultValue>'BTC'</defaultValue>
+      <description></description>
+      <id>258ab1cd-64fe-4d2d-8d9a-d9c200bb27f4</id>
+      <masked>false</masked>
+      <name>Bitcoin</name>
+   </variable>
+</TestCaseEntity>
