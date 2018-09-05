@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Testing Withdraw function (KYC level 4)</description>
+   <name>DQRXD-148</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>97b1da36-8ffd-4ce9-bc44-7b08280f4b36</testCaseGuid>
+</TestCaseEntity>

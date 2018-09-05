@@ -18,7 +18,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
@@ -26,9 +25,8 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.ui.Select
 import com.kms.katalon.core.webui.driver.DriverFactory
 
-
 //Call Login custom keyword
-CustomKeywords.'utility.ValidLogin.Level0Login'()
+CustomKeywords.'utility.ValidLogin.Level4Login'()
 
 WebUI.delay(10)
 
@@ -43,26 +41,5 @@ WebUI.click(findTestObject('Object Repository/SideMenuBar/Withdraw'))
 
 WebUI.delay(3)
 
-// Locate Pop-up Modal 
+// Location Pop-up Modal
 driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div"))
-
-//Selecting Dropdown Option
-Select currency = new Select(driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[1]/select")))
-
-//Choosing currency value
-currency.selectByValue("8");
-
-//Click next button
-driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[2]/button")).click()
-
-
-//Finding Title header modal
-WebElement VAmodal = driver.findElement(By.xpath("/html/body/div[5]/div/div/div[2]/div/div/div[1]/div"));
-
-//Storing Title header text
-String TitleHeader = VAmodal.getText();
-
-//Matching Title header
-WebUI.verifyMatch(TitleHeader, "VERIFY ACCOUNT", true)
-
-System.out.println(TitleHeader);
