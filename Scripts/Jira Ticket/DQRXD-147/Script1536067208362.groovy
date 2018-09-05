@@ -74,7 +74,7 @@ for(int i=1;i<=count;i++){
 	if(coin == "Bitcoin" && Title.contains(Bitcoin))
 	{
 		System.out.println("PASSED: Header is visible and title is similar");
-		
+		WebUI.verifyElementPresent(findTestObject('Deposit Modal/AddressField'))
 		//Close Modal
 		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
 	
@@ -82,22 +82,25 @@ for(int i=1;i<=count;i++){
 	else if(coin == "Bitcoin Cash" && Title.contains(BitcoinCash))
 	{
 		System.out.println("PASSED: Header is visible and title is similar");
-		
+		WebUI.verifyElementPresent(findTestObject('Deposit Modal/AddressField'))
 		//Close Modal
 		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
 	}
 	else if(coin == "Ethereum" && Title.contains(Ethereum)){
 		System.out.println("PASSED: Header is visible and title is similar");
+		WebUI.verifyElementPresent(findTestObject('Deposit Modal/AddressField'))
 		//Close Modal
 		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
 	}
 	else if(coin == "Ripple" && Title.contains(Ripple)){
 		System.out.println("PASSED: Header is visible and title is similar");
+		WebUI.verifyElementPresent(findTestObject('Deposit Modal/AddressField'))
 		//Close Modal
 		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
 	}
 	else if(coin == "Litecoin" && Title.contains(Litecoin)){
 		System.out.println("PASSED: Header is visible and title is similar");
+		WebUI.verifyElementPresent(findTestObject('Deposit Modal/AddressField'))
 		//Close Modal
 		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
 	}
