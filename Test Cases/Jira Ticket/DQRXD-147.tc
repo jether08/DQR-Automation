@@ -6,17 +6,66 @@
    <comment></comment>
    <testCaseGuid>4d9baa8d-7b05-4999-b426-72f688f00d88</testCaseGuid>
    <variable>
-      <defaultValue>'Ripple'</defaultValue>
-      <description></description>
-      <id>bc5c65fc-d3db-43cc-8ac0-e2b6bb9b7a99</id>
-      <masked>false</masked>
-      <name>MoneyValue</name>
-   </variable>
-   <variable>
       <defaultValue>'BTC'</defaultValue>
       <description></description>
       <id>258ab1cd-64fe-4d2d-8d9a-d9c200bb27f4</id>
       <masked>false</masked>
       <name>Bitcoin</name>
+   </variable>
+   <variable>
+      <defaultValue>'BCH'</defaultValue>
+      <description></description>
+      <id>28512bc3-2e87-4a22-99cd-026c4f9cd84d</id>
+      <masked>false</masked>
+      <name>BitcoinCash</name>
+   </variable>
+   <variable>
+      <defaultValue>'ETH'</defaultValue>
+      <description></description>
+      <id>8648f6d5-3d82-4ae3-ae95-03799da83c86</id>
+      <masked>false</masked>
+      <name>Ethereum</name>
+   </variable>
+   <variable>
+      <defaultValue>'XRP'</defaultValue>
+      <description></description>
+      <id>9eebae35-bf65-4294-9a71-edf942b7a749</id>
+      <masked>false</masked>
+      <name>Ripple</name>
+   </variable>
+   <variable>
+      <defaultValue>'LTC'</defaultValue>
+      <description></description>
+      <id>4774e392-b472-42e5-897f-28fd8ff3b91b</id>
+      <masked>false</masked>
+      <name>Litecoin</name>
+   </variable>
+   <variable>
+      <defaultValue>'EUR'</defaultValue>
+      <description></description>
+      <id>1351a86b-d390-4ebb-9030-4800244482dd</id>
+      <masked>false</masked>
+      <name>Euro</name>
+   </variable>
+   <variable>
+      <defaultValue>'ETC'</defaultValue>
+      <description></description>
+      <id>c4121ae5-d68f-4aa4-9c07-c5ccb035af1b</id>
+      <masked>false</masked>
+      <name>EthereumClassic</name>
+   </variable>
+   <variable>
+      <defaultValue>'DQR10'</defaultValue>
+      <description></description>
+      <id>e7adc56d-52d8-48a9-a172-b226e010804b</id>
+      <masked>false</masked>
+      <name>DQR10</name>
+   </variable>
+   <variable>
+      <defaultValue>'DQR30'</defaultValue>
+      <description></description>
+      <id>2c0c8b7b-9f0a-4161-8b69-7552d92d2104</id>
+      <masked>false</masked>
+      <name>DQR30</name>
    </variable>
 </TestCaseEntity>

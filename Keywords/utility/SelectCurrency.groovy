@@ -36,18 +36,18 @@ public class SelectCurrency {
 
 	def xrpbtc() {
 		WebDriver driver = DriverFactory.getWebDriver()
-				
+
 		//Select XRPBTC
 		WebElement select = driver.findElement(By.xpath('/html/body/div[1]/div[2]/header2/div[1]/div/ul/li[contains(@class,"instrument-XRPBTC")]'))
 		select.click()
-		
+
 		//Store primary and secondary currencies in variables
 		String currency = "XRPBTC"
 		String primary = "XRP"
 		String secondary = "BTC"
 
 		WebUI.delay(30)
-		
+
 		//Get the displayed currencies in the page
 		String above = WebUI.getText(findTestObject('trade.html/Currency Above'))
 		String below = WebUI.getText(findTestObject('trade.html/Currency Below'))
@@ -60,7 +60,7 @@ public class SelectCurrency {
 		String fees = WebUI.getText(findTestObject('trade.html/Fees Currency'))
 		String net = WebUI.getText(findTestObject('trade.html/Net Currency'))
 		String chart_footer = WebUI.getText(findTestObject('trade.html/Chart Footer'))
-		
+
 		//Verify if currency above matches the secondary currency: “<DEF>” in: //*[@id="main-content"]/div[1]/div[1]/div/div/table/tbody/tr[1]/td[1]
 		WebUI.verifyMatch(above, secondary, true)
 
@@ -87,7 +87,7 @@ public class SelectCurrency {
 
 		//Edit box under “Price per (<DEF>)”: //*[@id="trigger-content-1"]/div/div/div/div/div/div/div[2]/div[2]/div/input
 		WebUI.verifyElementPresent(findTestObject('trade.html/PricePerBox'), 10)
-		
+
 		//“Price (<DEF>)”: //*[@id="priceBookHeader"]
 		if(pricebookheader.contains(secondary)){
 			println("Order Book Price label is correct")

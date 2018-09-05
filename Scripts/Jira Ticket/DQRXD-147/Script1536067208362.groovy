@@ -44,51 +44,101 @@ WebUI.delay(3)
 // Location Pop-up Modal
 driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div"))
 
+//Create a collection for all currencies in the dropdown
+List <WebElement> collection = driver.findElements(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[1]/select/option"))
 
-Select currency = new Select(driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[1]/select")))
- List <WebElement> currencies = currency.getOptions()
- println(currencies)
- int count = currencies.size()
- println(count)
+//Get the total number of currencies
+int count = collection.size()
+println(count)
 
-//Select Bitcoin currency
-
-
-//currency.selectByVisibleText(MoneyValue);
-
-for(i=0;i<=count;i++){
-	currency.selectByIndex(i)
+//Iterate through all the dropdown options
+for(int i=1;i<=count;i++){
 	
-	String coin = currencies.get(i).getText()
+	//Select the currency
+	WebElement selectCoin = driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[1]/select/option["+i+ "]"))
+	selectCoin.click()
+	
+	//Get what the currency is
+	String coin = selectCoin.getText()
 	println(coin)
 
-	String Bitcoin = "BTC"
-	String Ripple = "XRP"
-	
-		
 	//Click next button
 	driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[2]/button")).click()
 
 	//Storing Title header text
-	WebElement Aptitle = driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[1]/div[1]"));
-	String Title = Aptitle.getText();
+	String Title = WebUI.getText(findTestObject("Deposit Modal/Title"),FailureHandling.OPTIONAL)
+	//WebElement Aptitle = driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[1]/div[1]"));
+	//String Title = Aptitle.getText();
 	System.out.println(Title);
-		
-
-/*	if(coin.contentEquals("Bitcoin"))
+	
+	if(coin == "Bitcoin" && Title.contains(Bitcoin))
 	{
-		System.out.println("Header is visible and title is similar");
+		System.out.println("PASSED: Header is visible and title is similar");
+		
+		//Close Modal
+		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
 	
 	}
-	else
+	else if(coin == "Bitcoin Cash" && Title.contains(BitcoinCash))
 	{
-		System.out.println("tae nah");
-	}	*/
+		System.out.println("PASSED: Header is visible and title is similar");
+		
+		//Close Modal
+		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
+	}
+	else if(coin == "Ethereum" && Title.contains(Ethereum)){
+		System.out.println("PASSED: Header is visible and title is similar");
+		//Close Modal
+		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
+	}
+	else if(coin == "Ripple" && Title.contains(Ripple)){
+		System.out.println("PASSED: Header is visible and title is similar");
+		//Close Modal
+		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
+	}
+	else if(coin == "Litecoin" && Title.contains(Litecoin)){
+		System.out.println("PASSED: Header is visible and title is similar");
+		//Close Modal
+		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
+	}
+	else if(coin == "Euro"){
+		//Click Cancel
+		driver.findElement(By.xpath('//*[@id="trade-deposit-dialog"]/div/div[2]/div/div[2]/div/div/div/button[1]')).click()
+	}
+	else if(coin == "Ethereum Classic"){
+		//Click X
+		driver.findElement(By.xpath('//*[@id="trade-deposit-dialog"]/div/div[1]/div/i')).click()
+		WebUI.refresh()
+		WebUI.delay(10)
+		//Click Hamburger Icon
+		WebUI.click(findTestObject('trade.html/Hamburger Menu'))
+		
+	}
+	else if(coin == "DQR10"){
+		//Click Close
+		driver.findElement(By.xpath('/html/body/div[5]/div/div/div[2]/div/div/div[2]/div/div/a[1]')).click()
+	}
+	else if(coin == "DQR30"){
+		//Click Close
+		driver.findElement(By.xpath('/html/body/div[5]/div/div/div[2]/div/div/div[2]/div/div/a[1]')).click()
+	}
+	else if(coin == "IOTA"){
+		//Click Close
+		driver.findElement(By.xpath('/html/body/div[5]/div/div/div[2]/div/div/div[2]/div/div/a[1]')).click()
+	}
+	else if(coin == "Dash"){
+		//Click Close
+		driver.findElement(By.xpath('/html/body/div[5]/div/div/div[2]/div/div/div[2]/div/div/a[1]')).click()
+	}
 	
-	//Close Modal
-	driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
+	//Click Deposit link text
+	WebUI.click(findTestObject('Object Repository/SideMenuBar/Deposit'))
 
-	
+	WebUI.delay(3)
+
+	// Location Pop-up Modal
+	driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div"))
+		
 }
 
 
