@@ -34,4 +34,49 @@
       <initValue>'Jether08'</initValue>
       <name>Gpassword0</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'BTC'</initValue>
+      <name>Bitcoin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'BCH'</initValue>
+      <name>BitcoinCash</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ETH'</initValue>
+      <name>Ethereum</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'XRP'</initValue>
+      <name>Ripple</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'LTC'</initValue>
+      <name>Litecoin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'EUR'</initValue>
+      <name>Euro</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ETC'</initValue>
+      <name>EthereumClassic</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'DQR10'</initValue>
+      <name>DQR10</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'DQR30'</initValue>
+      <name>DQR30</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -43,11 +43,56 @@ public class GlobalVariable {
      */
     public static Object Gpassword0
      
+    /**
+     * <p></p>
+     */
+    public static Object Bitcoin
+     
+    /**
+     * <p></p>
+     */
+    public static Object BitcoinCash
+     
+    /**
+     * <p></p>
+     */
+    public static Object Ethereum
+     
+    /**
+     * <p></p>
+     */
+    public static Object Ripple
+     
+    /**
+     * <p></p>
+     */
+    public static Object Litecoin
+     
+    /**
+     * <p></p>
+     */
+    public static Object Euro
+     
+    /**
+     * <p></p>
+     */
+    public static Object EthereumClassic
+     
+    /**
+     * <p></p>
+     */
+    public static Object DQR10
+     
+    /**
+     * <p></p>
+     */
+    public static Object DQR30
+     
 
     static {
         def allVariables = [:]        
         allVariables.put('default', [:])
-        allVariables.put('Staging', allVariables['default'] + ['Gusername' : 'nora-qa', 'Gpassword' : 'Vf4WmEw!', 'GloginUrl' : 'http://apsite-staging.hidora.com/login.html', 'Url' : 'http://apsite-staging.hidora.com/', 'Gusername0' : 'jether-qa1', 'Gpassword0' : 'Jether08'])
+        allVariables.put('Staging', allVariables['default'] + ['Gusername' : 'nora-qa', 'Gpassword' : 'Vf4WmEw!', 'GloginUrl' : 'http://apsite-staging.hidora.com/login.html', 'Url' : 'http://apsite-staging.hidora.com/', 'Gusername0' : 'jether-qa1', 'Gpassword0' : 'Jether08', 'Bitcoin' : 'BTC', 'BitcoinCash' : 'BCH', 'Ethereum' : 'ETH', 'Ripple' : 'XRP', 'Litecoin' : 'LTC', 'Euro' : 'EUR', 'EthereumClassic' : 'ETC', 'DQR10' : 'DQR10', 'DQR30' : 'DQR30'])
         
         String profileName = RunConfiguration.getExecutionProfile()
         
@@ -58,6 +103,15 @@ public class GlobalVariable {
         Url = selectedVariables['Url']
         Gusername0 = selectedVariables['Gusername0']
         Gpassword0 = selectedVariables['Gpassword0']
+        Bitcoin = selectedVariables['Bitcoin']
+        BitcoinCash = selectedVariables['BitcoinCash']
+        Ethereum = selectedVariables['Ethereum']
+        Ripple = selectedVariables['Ripple']
+        Litecoin = selectedVariables['Litecoin']
+        Euro = selectedVariables['Euro']
+        EthereumClassic = selectedVariables['EthereumClassic']
+        DQR10 = selectedVariables['DQR10']
+        DQR30 = selectedVariables['DQR30']
         
     }
 }

@@ -71,7 +71,7 @@ for(int i=1;i<=count;i++){
 	//String Title = Aptitle.getText();
 	System.out.println(Title);
 	
-	if(coin == "Bitcoin" && Title.contains(Bitcoin))
+	if(coin == "Bitcoin" && Title.contains(GlobalVariable.Bitcoin))
 	{
 		System.out.println("PASSED: Header is visible and title is similar");
 		WebUI.verifyElementPresent(findTestObject('Deposit Modal/AddressField'),3)
@@ -79,26 +79,26 @@ for(int i=1;i<=count;i++){
 		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
 	
 	}
-	else if(coin == "Bitcoin Cash" && Title.contains(BitcoinCash))
+	else if(coin == "Bitcoin Cash" && Title.contains(GlobalVariable.BitcoinCash))
 	{
 		System.out.println("PASSED: Header is visible and title is similar");
 		WebUI.verifyElementPresent(findTestObject('Deposit Modal/AddressField'),3)
 		//Close Modal
 		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
 	}
-	else if(coin == "Ethereum" && Title.contains(Ethereum)){
+	else if(coin == "Ethereum" && Title.contains(GlobalVariable.Ethereum)){
 		System.out.println("PASSED: Header is visible and title is similar");
 		WebUI.verifyElementPresent(findTestObject('Deposit Modal/AddressField'),3)
 		//Close Modal
 		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
 	}
-	else if(coin == "Ripple" && Title.contains(Ripple)){
+	else if(coin == "Ripple" && Title.contains(GlobalVariable.Ripple)){
 		System.out.println("PASSED: Header is visible and title is similar");
 		WebUI.verifyElementPresent(findTestObject('Deposit Modal/AddressField'),3)
 		//Close Modal
 		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
 	}
-	else if(coin == "Litecoin" && Title.contains(Litecoin)){
+	else if(coin == "Litecoin" && Title.contains(GlobalVariable.Litecoin)){
 		System.out.println("PASSED: Header is visible and title is similar");
 		WebUI.verifyElementPresent(findTestObject('Deposit Modal/AddressField'),3)
 		//Close Modal
