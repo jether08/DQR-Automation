@@ -79,4 +79,14 @@
       <initValue>'DQR30'</initValue>
       <name>DQR30</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'IOTA'</initValue>
+      <name>IOTA</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Dash'</initValue>
+      <name>Dash</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
