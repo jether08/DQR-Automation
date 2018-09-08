@@ -66,7 +66,7 @@ for(int i=1;i<=count;i++){
 	driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[2]/button")).click()
 
 	//Storing Title header text
-	String Title = WebUI.getText(findTestObject("Deposit Modal/Title"),FailureHandling.OPTIONAL)
+	String Title = WebUI.getText(findTestObject("Deposit Modal/Title"),FailureHandling.CONTINUE_ON_FAILURE)
 	//WebElement Aptitle = driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[1]/div[1]"));
 	//String Title = Aptitle.getText();
 	System.out.println(Title);
@@ -105,6 +105,7 @@ for(int i=1;i<=count;i++){
 		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
 	}
 	else if(coin == "Euro"){
+		
 		//Click Cancel
 		driver.findElement(By.xpath('//*[@id="trade-deposit-dialog"]/div/div[2]/div/div[2]/div/div/div/button[1]')).click()
 	}
