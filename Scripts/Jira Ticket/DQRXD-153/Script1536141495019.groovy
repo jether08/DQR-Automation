@@ -21,3 +21,10 @@ import internal.GlobalVariable as GlobalVariable
 
 //Open the browser
 WebUI.openBrowser('http://apsite-staging.hidora.com/registration.html')
+
+WebUI.waitForPageLoad(10)
+
+WebUI.setText(findTestObject('Registration/reg_username'), username)
+
+WebUI.setText(findTestObject('Registration/reg_email'), email)
+
