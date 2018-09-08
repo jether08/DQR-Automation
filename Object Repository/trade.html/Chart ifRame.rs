@@ -9,11 +9,15 @@
          <key>BASIC</key>
          <value>//*[@id=&quot;tradingview_46ed0&quot;]/iframe</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;tradingview_46ed0&quot;]/iframe[contains(@id,&quot;tradingview&quot;)]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
