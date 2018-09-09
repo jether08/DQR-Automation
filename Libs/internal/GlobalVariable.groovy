@@ -88,11 +88,21 @@ public class GlobalVariable {
      */
     public static Object DQR30
      
+    /**
+     * <p></p>
+     */
+    public static Object IOTA
+     
+    /**
+     * <p></p>
+     */
+    public static Object Dash
+     
 
     static {
         def allVariables = [:]        
         allVariables.put('default', [:])
-        allVariables.put('Staging', allVariables['default'] + ['Gusername' : 'nora-qa', 'Gpassword' : 'Vf4WmEw!', 'GloginUrl' : 'http://apsite-staging.hidora.com/login.html', 'Url' : 'http://apsite-staging.hidora.com/', 'Gusername0' : 'jether-qa1', 'Gpassword0' : 'Jether08', 'Bitcoin' : 'BTC', 'BitcoinCash' : 'BCH', 'Ethereum' : 'ETH', 'Ripple' : 'XRP', 'Litecoin' : 'LTC', 'Euro' : 'EUR', 'EthereumClassic' : 'ETC', 'DQR10' : 'DQR10', 'DQR30' : 'DQR30'])
+        allVariables.put('Staging', allVariables['default'] + ['Gusername' : 'nora-qa', 'Gpassword' : 'Vf4WmEw!', 'GloginUrl' : 'http://apsite-staging.hidora.com/login.html', 'Url' : 'http://apsite-staging.hidora.com/', 'Gusername0' : 'jether-qa1', 'Gpassword0' : 'Jether08', 'Bitcoin' : 'BTC', 'BitcoinCash' : 'BCH', 'Ethereum' : 'ETH', 'Ripple' : 'XRP', 'Litecoin' : 'LTC', 'Euro' : 'EUR', 'EthereumClassic' : 'ETC', 'DQR10' : 'DQR10', 'DQR30' : 'DQR30', 'IOTA' : 'IOTA', 'Dash' : 'Dash'])
         
         String profileName = RunConfiguration.getExecutionProfile()
         
@@ -112,6 +122,8 @@ public class GlobalVariable {
         EthereumClassic = selectedVariables['EthereumClassic']
         DQR10 = selectedVariables['DQR10']
         DQR30 = selectedVariables['DQR30']
+        IOTA = selectedVariables['IOTA']
+        Dash = selectedVariables['Dash']
         
     }
 }
