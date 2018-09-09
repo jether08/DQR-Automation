@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Welcome</name>
+   <name>InboxMail</name>
    <tag></tag>
-   <elementGuidId>84404cfa-7321-473e-89cf-e5c1fa26f559</elementGuidId>
+   <elementGuidId>2259e6c6-ea61-4d80-8de6-a1fd419418da</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;registerform&quot;]/div/div/div[1]</value>
+         <value>//*[@id=&quot;mails&quot;]/tbody/tr/td[2]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;registerform&quot;]/div/div/div[1]</value>
+      <value>//*[@id=&quot;mails&quot;]/tbody/tr/td[2]/a</value>
    </webElementProperties>
 </WebElementEntity>

@@ -3,20 +3,28 @@
    <description>Registration.html test</description>
    <name>DQRXD-153</name>
    <tag></tag>
-   <comment></comment>
+   <comment>User Successfuly Registered
+User Successfuly recieved Invitation Email</comment>
    <testCaseGuid>908c914c-2400-4c7f-86fb-e2ae4c6e77d2</testCaseGuid>
    <variable>
-      <defaultValue>'test1'</defaultValue>
+      <defaultValue>'DQRXtest13'</defaultValue>
       <description></description>
       <id>57a80aef-db26-4c37-b69d-3ee8e82f2482</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
-      <defaultValue>'test1@mailinator.com'</defaultValue>
+      <defaultValue>'Tester01'</defaultValue>
       <description></description>
-      <id>04a4e37c-fbd6-4416-9d00-55bdfaf1473b</id>
+      <id>cc7534d6-6729-42d6-849a-208094306e8b</id>
       <masked>false</masked>
-      <name>email</name>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tester01'</defaultValue>
+      <description></description>
+      <id>3c728832-6cb8-4fe4-9058-75af91e711fd</id>
+      <masked>false</masked>
+      <name>confirmpassword</name>
    </variable>
 </TestCaseEntity>
