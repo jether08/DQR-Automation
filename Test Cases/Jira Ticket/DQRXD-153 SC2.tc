@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Registration.html test Scenario 2 Mismatch Password</description>
+   <name>DQRXD-153 SC2</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3f7dadd3-f405-4416-ba89-071c42285d9b</testCaseGuid>
+   <variable>
+      <defaultValue>'DQRXtest16'</defaultValue>
+      <description></description>
+      <id>71531da2-0ff6-4c0d-9427-792ebda181dc</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'DQRXtest16@mailinator.com'</defaultValue>
+      <description></description>
+      <id>3fa14771-95e1-471b-ae08-bb1474c16167</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tester01'</defaultValue>
+      <description></description>
+      <id>cb5ce49a-92ab-4ca7-a988-cb2a8e866aaa</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tester02'</defaultValue>
+      <description></description>
+      <id>dee8531b-390a-42a8-877c-c0c3c2f288b6</id>
+      <masked>false</masked>
+      <name>confirmpassword</name>
+   </variable>
+</TestCaseEntity>
