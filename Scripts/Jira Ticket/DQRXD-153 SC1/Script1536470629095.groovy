@@ -31,27 +31,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
 //Open the browser
-WebUI.openBrowser('http://apsite-staging.hidora.com/registration.html')
+WebUI.openBrowser('http://test.dqr-private.com/registration.html')
 
 WebUI.waitForPageLoad(10)
 
 //Initializing webdriver script
 WebDriver driver = DriverFactory.getWebDriver()
 
-//Method to Open new tab in same browser
-Robot robot = new Robot()
 
-robot.keyPress(KeyEvent.VK_CONTROL);
-robot.keyPress(KeyEvent.VK_T);
-robot.keyRelease(KeyEvent.VK_CONTROL);
-robot.keyRelease(KeyEvent.VK_T);
+WebUI.executeJavaScript('window.open();', [])
+currentWindow =  WebUI.getWindowIndex()
 
-//Switch focus to new tab
-ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
-driver.switchTo().window(tabs.get(1));
+println(currentWindow)
 
-//Launch URL in the new tab
-driver.get("https://temp-mail.org/en/");
+//Go in to new tab
+WebUI.switchToWindowIndex(currentWindow + 1)
+WebUI.navigateToUrl('https://temp-mail.org/en/')
+
 
 //Get Email address generated in temp-mail
 IDmail = WebUI.getAttribute(findTestObject('Registration/IDmail'),'value')
@@ -59,12 +55,11 @@ IDmail = WebUI.getAttribute(findTestObject('Registration/IDmail'),'value')
 //Print generated email address
 println(IDmail)
 
-WebUI.refresh()
-
 WebUI.delay(3)
 
-//Switch back to DQRX registration page
-WebUI.switchToWindowUrl('http://apsite-staging.hidora.com/registration.html')
+WebUI.refresh()
+
+WebUI.switchToWindowIndex(currentWindow)
 
 WebUI.delay(3)
 

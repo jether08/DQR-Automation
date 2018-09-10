@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 //Open the browser
-WebUI.openBrowser('http://apsite-staging.hidora.com/registration.html')
+WebUI.openBrowser('http://test.dqr-private.com/registration.html')
 
 WebUI.waitForPageLoad(10)
 
