@@ -54,7 +54,7 @@ public class ValidLogin {
 		//Click Login button
 		WebUI.click(findTestObject('Login/button_Log_In'))
 	}
-	
+
 	@Keyword
 	def Level0Login() {
 
@@ -82,7 +82,5 @@ public class ValidLogin {
 		//Click Login button
 		WebUI.click(findTestObject('Login/button_Log_In'))
 	}
-	
-	
 }
 

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;tradingview_46ed0&quot;]/iframe[contains(@id,&quot;tradingview&quot;)]</value>
+         <value>//div[starts-with(@id,&quot;tradingview_&quot;)]/iframe</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

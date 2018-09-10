@@ -102,7 +102,7 @@ public class GlobalVariable {
     static {
         def allVariables = [:]        
         allVariables.put('default', [:])
-        allVariables.put('Staging', allVariables['default'] + ['Gusername' : 'nora-qa', 'Gpassword' : 'Vf4WmEw!', 'GloginUrl' : 'http://apsite-staging.hidora.com/login.html', 'Url' : 'http://apsite-staging.hidora.com/', 'Gusername0' : 'jether-qa1', 'Gpassword0' : 'Jether08', 'Bitcoin' : 'BTC', 'BitcoinCash' : 'BCH', 'Ethereum' : 'ETH', 'Ripple' : 'XRP', 'Litecoin' : 'LTC', 'Euro' : 'EUR', 'EthereumClassic' : 'ETC', 'DQR10' : 'DQR10', 'DQR30' : 'DQR30', 'IOTA' : 'IOTA', 'Dash' : 'Dash'])
+        allVariables.put('Staging', allVariables['default'] + ['Gusername' : 'nora-qa', 'Gpassword' : 'Vf4WmEw!', 'GloginUrl' : 'http://test.dqr-private.com/login.html', 'Url' : 'http://test.dqr-private.com', 'Gusername0' : 'jether-qa1', 'Gpassword0' : 'Jether08', 'Bitcoin' : 'BTC', 'BitcoinCash' : 'BCH', 'Ethereum' : 'ETH', 'Ripple' : 'XRP', 'Litecoin' : 'LTC', 'Euro' : 'EUR', 'EthereumClassic' : 'ETC', 'DQR10' : 'DQR10', 'DQR30' : 'DQR30', 'IOTA' : 'IOTA', 'Dash' : 'Dash'])
         
         String profileName = RunConfiguration.getExecutionProfile()
         
