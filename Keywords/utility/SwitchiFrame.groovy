@@ -54,7 +54,7 @@ public class SwitchiFrame {
 		//String chart = driver.findElement(By.xpath('//*[@id="chart-area"]/div/div[3]/table/tbody/tr[1]/td[2]/div/div[3]/div[1]')).getText();
 		WebUI.switchToFrame(findTestObject('trade.html/Chart ifRame'), 15)
 		String chart = WebUI.getText(findTestObject('trade.html/Chart Currency'))
-		
+
 		//Verify if currency in the chart contains the selected currency text: “<ABCDEF>” in: //*[@id="chart-area"]/div/div[3]/table/tbody/tr[1]/td[2]/div/div[3]/div[1]/span
 		if (chart.contains(currency)){
 			println("Currency in the chart is correct.")

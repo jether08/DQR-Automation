@@ -7,6 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>/html/body/div[1]/div[1]/ul/li[@class='show-loggedin']/a[@title='Verify Account']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div[1]/ul/li[5]/a</value>
+      <value>/html/body/div[1]/div[1]/ul/li[@class='show-loggedin']/a[@title='Verify Account']</value>
    </webElementProperties>
 </WebElementEntity>

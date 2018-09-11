@@ -32,7 +32,6 @@ CustomKeywords.'utility.ValidLogin.Level4Login'()
 
 WebUI.delay(10)
 
-
 //Click Hamburger Icon
 WebUI.click(findTestObject('trade.html/Hamburger Menu'))
 
