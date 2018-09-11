@@ -24,6 +24,7 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.ui.Select
 import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.util.KeywordUtil
 
 //Call Login custom keyword
 CustomKeywords.'utility.ValidLogin.Level0Login'()
@@ -41,14 +42,73 @@ WebUI.click(findTestObject('Object Repository/SideMenuBar/Deposit'))
 
 WebUI.delay(3)
 
-// Location Pop-up Modal
+// Locate Pop-up Modal
 driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div"))
 
 //Selecting Dropdown Option
-Select currency = new Select(driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[1]/select")))
+//Select currency = new Select(driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[1]/select")))
 
-//Choosing Ripple value
-currency.selectByValue("5");
+//Create a collection for all currencies in the dropdown
+List <WebElement> collection = driver.findElements(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[1]/select/option"))
+
+int count = collection.size()
+println(count)
+
+
+//Iterate through all the dropdown options
+for(int i=1;i<=count;i++){
+	
+	//Select the currency
+	WebElement selectCoin = driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[1]/select/option["+i+ "]"))
+	selectCoin.click()
+	
+	//Get what the currency is
+	String coin = selectCoin.getText()
+	println(coin)
+
+	//Click next button
+	driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[2]/button")).click()
+	
+	//Storing Title header text
+	String VAmodal = WebUI.getText(findTestObject("Deposit Modal/VAtitle"),FailureHandling.CONTINUE_ON_FAILURE)
+	//WebElement Aptitle = driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[1]/div[1]"));
+	//String Title = Aptitle.getText();
+	System.out.println(VAmodal);
+	
+	
+	if(VAmodal.equals("VERIFY ACCOUNT"))
+	{
+		KeywordUtil.markPassed("Veriy Account is displayed")
+		
+	}
+		
+	else
+	{
+		
+		KeywordUtil.markFailed("No Verify Account displayed")
+		
+	}
+	
+	
+	driver.findElement(By.xpath("//*[contains(text(), 'Close')]")).click()
+		
+WebUI.click(findTestObject('Object Repository/SideMenuBar/Deposit'))
+	
+}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/*/Choosing Ripple value
+currency.selectByValue("3");
 
 //Click next button
 driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[2]/button")).click()
@@ -63,4 +123,6 @@ String TitleHeader = VAmodal.getText();
 //Matching Title header
 WebUI.verifyMatch(TitleHeader, "VERIFY ACCOUNT", true)
 
-System.out.println(TitleHeader);
+System.out.println(TitleHeader);*/
+	
+
