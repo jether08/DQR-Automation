@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@id=&quot;trade-deposit-dialog&quot;]/div/div[2]/div/div/div[2]/div/div/div[2]/select[@placeholder=&quot;Address List&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;trade-deposit-dialog&quot;]/div/div[2]/div/div/div[2]/div/div/div[2]/select</value>
+      <value>//*[@id=&quot;trade-deposit-dialog&quot;]/div/div[2]/div/div/div[2]/div/div/div[2]/select[@placeholder=&quot;Address List&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

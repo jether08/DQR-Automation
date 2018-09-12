@@ -73,8 +73,12 @@ for(int i=1;i<=count;i++){
 	
 	if(coin == "Bitcoin" && Title.contains(GlobalVariable.Bitcoin))
 	{
-		System.out.println("PASSED: Header is visible and title is similar");
-		WebUI.verifyElementPresent(findTestObject('Deposit Modal/AddressField'),3)
+		//Verify if Address Field is present
+		WebUI.verifyElementPresent(findTestObject('Deposit Modal/AddressField'),3,FailureHandling.CONTINUE_ON_FAILURE)
+		
+		//
+		System.out.println("PASSED: Title is correct and Address Field is present");
+		
 		//Close Modal
 		driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[2]/div/div/div[4]/div/button")).click()
 	
@@ -120,19 +124,19 @@ for(int i=1;i<=count;i++){
 	}
 	else if(coin == "DQR10"){
 		//Click Close
-		driver.findElement(By.xpath('/html/body/div[5]/div/div/div[2]/div/div/div[2]/div/div/a[1]')).click()
+		driver.findElement(By.xpath('//*[@id="trade-deposit-dialog"]//button[@class="btn btn-action"]')).click()
 	}
 	else if(coin == "DQR30"){
 		//Click Close
-		driver.findElement(By.xpath('/html/body/div[5]/div/div/div[2]/div/div/div[2]/div/div/a[1]')).click()
+		driver.findElement(By.xpath('//*[@id="trade-deposit-dialog"]//button[@class="btn btn-action"]')).click()
 	}
 	else if(coin == "IOTA"){
 		//Click Close
-		driver.findElement(By.xpath('/html/body/div[5]/div/div/div[2]/div/div/div[2]/div/div/a[1]')).click()
+		driver.findElement(By.xpath('//*[@id="trade-deposit-dialog"]//button[@class="btn btn-action"]')).click()
 	}
 	else if(coin == "Dash"){
 		//Click Close
-		driver.findElement(By.xpath('/html/body/div[5]/div/div/div[2]/div/div/div[2]/div/div/a[1]')).click()
+		driver.findElement(By.xpath('//*[@id="trade-deposit-dialog"]//button[@class="btn btn-action"]')).click()
 	}
 	
 	//Click Deposit link text

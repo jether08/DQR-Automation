@@ -7,15 +7,17 @@ import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.contribution.WebUiDriverCleaner
 import com.kms.katalon.core.mobile.contribution.MobileDriverCleaner
+import com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner
 
 
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.webui.contribution.WebUiDriverCleaner())
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.mobile.contribution.MobileDriverCleaner())
+DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\Jeth\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Jira Ticket\\DQRXD-147\\20180908_185127\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\Jeth\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Jira Ticket\\DQRXD-144\\20180912_203839\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Jira Ticket/DQRXD-147', new TestCaseBinding('Test Cases/Jira Ticket/DQRXD-147',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Jira Ticket/DQRXD-144', new TestCaseBinding('Test Cases/Jira Ticket/DQRXD-144',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

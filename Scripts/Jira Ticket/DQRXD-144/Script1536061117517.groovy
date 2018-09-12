@@ -25,6 +25,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.ui.Select
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.logging.KeywordLogger
 
 //Call Login custom keyword
 CustomKeywords.'utility.ValidLogin.Level0Login'()
@@ -72,17 +73,18 @@ for(int i=1;i<=count;i++){
 	//WebElement Aptitle = driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div/div[1]/div[1]"));
 	//String Title = Aptitle.getText();
 	System.out.println(VAmodal);
-	
+	KeywordLogger log = new KeywordLogger()
 	
 	if(VAmodal.equals("VERIFY ACCOUNT"))
 	{
+		log.logInfo("PASSED")
 		KeywordUtil.markPassed("Veriy Account is displayed")
 		
 	}
 		
 	else
 	{
-		
+		log.logWarning("FAILED: Verify Account is NOT displayed")
 		KeywordUtil.markFailed("No Verify Account displayed")
 		
 	}
