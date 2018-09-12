@@ -32,39 +32,7 @@ WebUI.click(findTestObject('trade.html/Currency Selector'))
 
 //OPTION 1: Call Select Currency custom keyword
 //CustomKeywords.'utility.SelectCurrency.xrpbtc'()
-//CustomKeywords.'utility.SwitchiFrame.chart'()
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-		WebElement select = driver.findElement(By.xpath('/html/body/div[1]/div[2]/header2/div[1]/div/ul/li[contains(@class,"instrument-DQR30EUR")]'))
-		select.click()
-		
-		WebUI.delay(60)
-		
-		String currency = "DQR30EUR"
-		int iframecnt = (driver.findElements(By.tagName('iframe'))).size()
-		println(iframecnt)
-		//WebUI.switchToDefaultContent()
-		iframe = findTestObject('trade.html/Chart ifRame')
-		WebUI.verifyElementPresent(iframe, 15)
-		WebUI.switchToFrame(findTestObject('trade.html/Chart ifRame'), 35)
-		//driver.switchTo().frame(driver.findElement(By.tagName('iframe')))
-				
-		String chart = WebUI.getText(findTestObject('trade.html/Chart Currency'))
-		
-		//Verify if currency in the chart contains the selected currency text: “<ABCDEF>” in: //*[@id="chart-area"]/div/div[3]/table/tbody/tr[1]/td[2]/div/div[3]/div[1]/span
-		if (chart.contains(currency)){
-			println("Currency in the chart is correct.")
-		}
-		else{
-			println(chart)
-		}
-		
-		
-	
-
-		
-
+CustomKeywords.'utility.SwitchiFrame.chart'()
 
 
 /*/OPTION 2: Loop through the currencies in the list
