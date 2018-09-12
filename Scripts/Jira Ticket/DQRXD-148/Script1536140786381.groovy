@@ -137,20 +137,20 @@ for(int i=1;i<=count;i++){
 		
 	}
 	else if(coin == "DQR10"){
-		//Click Close
-		driver.findElement(By.xpath('/html/body/div[5]/div/div/div[2]/div/div/div[2]/div/div/a[1]')).click()
+		//Click Cancel
+		driver.findElement(By.xpath('//*[@id="trade-deposit-dialog"]//button[contains(text(),"Cancel")]')).click()
 	}
 	else if(coin == "DQR30"){
-		//Click Close
-		driver.findElement(By.xpath('/html/body/div[5]/div/div/div[2]/div/div/div[2]/div/div/a[1]')).click()
+		//Click Cancel
+		driver.findElement(By.xpath('//*[@id="trade-deposit-dialog"]//button[contains(text(),"Cancel")]')).click()
 	}
 	else if(coin == "IOTA"){
 		//Click Close
-		driver.findElement(By.xpath('/html/body/div[5]/div/div/div[2]/div/div/div[2]/div/div/a[1]')).click()
+		driver.findElement(By.xpath('//*[@id="trade-deposit-dialog"]//button[contains(text(),"Cancel")]')).click()
 	}
 	else if(coin == "Dash"){
 		//Click Close
-		driver.findElement(By.xpath('/html/body/div[5]/div/div/div[2]/div/div/div[2]/div/div/a[1]')).click()
+		driver.findElement(By.xpath('//*[@id="trade-deposit-dialog"]//button[contains(text(),"Cancel")]')).click()
 	}
 	
 	//Click Deposit link text
