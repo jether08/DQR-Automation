@@ -45,8 +45,6 @@ WebUI.delay(3)
 // Locate Pop-up Modal
 driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div"))
 
-//Selecting Dropdown Option
-//Select currency = new Select(driver.findElement(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[1]/select")))
 
 //Create a collection for all currencies in the dropdown
 List <WebElement> collection = driver.findElements(By.xpath("//*[@id='trade-deposit-dialog']/div/div[2]/div/div[2]/div/form/div[1]/select/option"))

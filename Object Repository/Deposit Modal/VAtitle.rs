@@ -7,16 +7,27 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[5]/div/div/div[2]/div/div/div[1]/div</value>
+         <value>//*[@class = 'ap-title']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>/html/body/div[5]/div/div/div[2]/div/div/div[1]/div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ap-title</value>
    </webElementProperties>
 </WebElementEntity>
