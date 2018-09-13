@@ -38,13 +38,13 @@ public class SelectCurrency {
 		WebDriver driver = DriverFactory.getWebDriver()
 
 		//Select XRPBTC
-		WebElement select = driver.findElement(By.xpath('/html/body/div[1]/div[2]/header2/div[1]/div/ul/li[contains(@class,"instrument-XRPBTC")]'))
+		WebElement select = driver.findElement(By.xpath('/html/body/div[1]/div[2]/header2/div[1]/div/ul/li[contains(@class,"instrument-DQR30EUR")]'))
 		select.click()
 
 		//Store primary and secondary currencies in variables
-		String currency = "XRPBTC"
-		String primary = "XRP"
-		String secondary = "BTC"
+		String currency = "DQR30EUR"
+		String primary = "DQR30"
+		String secondary = "EUR"
 
 		WebUI.delay(30)
 
