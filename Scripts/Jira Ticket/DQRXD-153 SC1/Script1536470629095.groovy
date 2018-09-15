@@ -84,7 +84,7 @@ WelcomeMessage = WebUI.getText(findTestObject('Registration/Welcome'), FailureHa
 //Verify that the user is successfuy registered
 WebUI.verifyMatch(WelcomeMessage,"WELCOME", true)
 
-WebUI.comment('User Successfuly Registered')
+WebUI.comment('User Successfully Registered')
 
 //Swithc back to Temp-mail
 WebUI.switchToWindowUrl('https://temp-mail.org/en/')
@@ -98,6 +98,6 @@ ActivationMail = WebUI.getText(findTestObject('Registration/InboxMail'), Failure
 
 WebUI.verifyMatch(ActivationMail,"Activate your Account.", true)
 
-WebUI.comment('User Successfuly recieved Invitation Email')
+WebUI.comment('User Successfully received Invitation Email')
 
 
