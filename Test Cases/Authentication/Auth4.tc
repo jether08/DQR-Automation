@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User attempts login, which fails due to incorrect userid</description>
+   <name>Auth4</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2bdfffec-6199-4eb0-900c-4379f32e907e</testCaseGuid>
+   <variable>
+      <defaultValue>'luke'</defaultValue>
+      <description></description>
+      <id>0c28be5c-bdd2-40f4-af1c-076d47b30448</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'Vf4WmEw!'</defaultValue>
+      <description></description>
+      <id>ca5b3803-3c93-4227-992b-097516915dbe</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>
