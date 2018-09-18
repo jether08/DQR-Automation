@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User is logged in and tries to action 'SIDEBAR.MENU_LOGOUT'</description>
+   <name>SIDE5</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ac1f31bc-3714-46e7-beb3-55ccc409ab7c</testCaseGuid>
+</TestCaseEntity>
