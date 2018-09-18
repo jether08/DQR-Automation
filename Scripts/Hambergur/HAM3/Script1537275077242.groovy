@@ -12,6 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
@@ -33,19 +34,8 @@ WebDriver driver = DriverFactory.getWebDriver()
 WebUI.click(findTestObject('trade.html/Hamburger Menu'))
 
 
-driver.findElement(By.xpath("//*[contains(text(), 'Sign Out')]")).click()
-
-
-WebUI.navigateToUrl('https://test.dqr-private.com/trade.html')
-
-
-WebUI.click(findTestObject('trade.html/Hamburger Menu'))
-
 WebUI.verifyElementPresent(findTestObject('SideMenuBar/OpenSideMenu'), 5, FailureHandling.STOP_ON_FAILURE)
 
-
 println('Side Menu is Open Successfuly')
-
-
 
 
