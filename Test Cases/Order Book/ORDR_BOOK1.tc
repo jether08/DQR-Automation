@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Order Book exists - User can click it and view orderbook</description>
    <name>ORDR_BOOK1</name>
    <tag></tag>
    <comment></comment>

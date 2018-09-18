@@ -13,18 +13,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//Call Login custom keyword
 CustomKeywords.'utility.ValidLogin.Level4Login'()
 
 WebUI.delay(10)
 
-//Click the Recent Trades tab
+//Verify that the Recent Trades tab exists
+WebUI.verifyElementPresent(findTestObject('trade.html/Recent Trades tab'), 10)
+
+//Click on the Recent Trades tab
 WebUI.click(findTestObject('trade.html/Recent Trades tab'))
 
-//Click the Order Book tab
-WebUI.click(findTestObject('trade.html/Order Book tab'))
+//Verify that the user can view the Recent Trades order book
+WebUI.verifyElementPresent(findTestObject('trade.html/Recent Trades ordrBk'), 3)
 
-//Verify that the Order Book section is present
-WebUI.verifyElementPresent(findTestObject('trade.html/OrderBk_Price'), 10)
+println('PASSED: Recent Trades order book is visible')
 
-println('PASSED: Order Book is clickable and visible.')
+

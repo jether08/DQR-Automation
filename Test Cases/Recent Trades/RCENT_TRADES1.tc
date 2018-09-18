@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Recent trades exist - User can click it and view orderbook</description>
+   <name>RCENT_TRADES1</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>56e89068-d8ef-4aa2-b59e-baa7b486b59d</testCaseGuid>
+</TestCaseEntity>
