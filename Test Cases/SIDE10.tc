@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User is logged out and tries to action 'HOME_DIRECT.SIGN_UP'</description>
+   <name>SIDE10</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d8995460-09ee-461d-a49c-c1ba5a679e52</testCaseGuid>
+</TestCaseEntity>
