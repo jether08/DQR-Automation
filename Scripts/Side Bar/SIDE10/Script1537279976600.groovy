@@ -27,8 +27,23 @@ WebUI.click(findTestObject('SideMenuBar/Signout'))
 
 WebUI.delay(10)
 
+//Navigate to trade.html page
+WebUI.navigateToUrl('https://test.dqr-private.com/trade.html')
+
+//Click Hamburger Icon again
+WebUI.click(findTestObject('trade.html/Hamburger Menu'))
+
 //Verify that the Signup button is clickable
-WebUI.verifyElementClickable(findTestObject('Registration/Sign Up Index'))
+WebUI.verifyElementClickable(findTestObject('SideMenuBar/Side_Signup'))
+
+//Click on the Signup option
+WebUI.click(findTestObject('SideMenuBar/Side_Signup'))
+
+WebUI.delay(10)
+
+//Verify that the site navigates to the Signup page
+url = WebUI.getUrl()
+WebUI.verifyMatch(url, 'https://test.dqr-private.com/registration.html', true)
 
 
 
