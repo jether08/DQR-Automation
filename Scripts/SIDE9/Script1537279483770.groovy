@@ -27,6 +27,12 @@ WebUI.click(findTestObject('SideMenuBar/Signout'))
 
 WebUI.delay(10)
 
+//Navigate to trade.html page
+WebUI.navigateToUrl('https://test.dqr-private.com/trade.html')
+
+//Click Hamburger Icon again
+WebUI.click(findTestObject('trade.html/Hamburger Menu'))
+
 //Verify that the Login button is clickable
 WebUI.verifyElementClickable(findTestObject('Login/a_Login'))
 
