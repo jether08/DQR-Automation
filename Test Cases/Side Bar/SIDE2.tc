@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User is logged in and tries to action 'SIDEBAR.MENU_WITHDRAW'</description>
+   <name>SIDE2</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d7436123-3340-4209-8f60-421f92d84219</testCaseGuid>
+</TestCaseEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[contains(text(), 'Deposit')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div[1]/ul/li[2]/a</value>
+      <value>//*[contains(text(), 'Withdraw')]</value>
    </webElementProperties>
 </WebElementEntity>
