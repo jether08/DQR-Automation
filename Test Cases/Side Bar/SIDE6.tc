@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User is logged in and tries to action 'SIDEBAR.HELP'</description>
+   <name>SIDE6</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4671988e-5cad-4fd7-bcd1-754e78a372c4</testCaseGuid>
+</TestCaseEntity>
