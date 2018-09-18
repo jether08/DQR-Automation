@@ -13,7 +13,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-
 //Call Level4 Login custom keyword
 CustomKeywords.'utility.ValidLogin.Level4Login'()
 
@@ -34,7 +33,13 @@ WebUI.navigateToUrl('https://test.dqr-private.com/trade.html')
 WebUI.click(findTestObject('trade.html/Hamburger Menu'))
 
 //Verify that the Login button is clickable
-WebUI.verifyElementClickable(findTestObject('Login/a_Login'))
+WebUI.verifyElementClickable(findTestObject('SideMenuBar/Side_Login'))
 
+//Click on the Login option
+WebUI.click(findTestObject('SideMenuBar/Side_Login'))
 
+WebUI.delay(10)
 
+//Verify that the site navigates to the Login page
+url = WebUI.getUrl()
+WebUI.verifyMatch(url, 'https://test.dqr-private.com/login.html', true)
