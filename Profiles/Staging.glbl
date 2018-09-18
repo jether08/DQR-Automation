@@ -5,7 +5,7 @@
    <tag></tag>
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
-      <description>username used to log in</description>
+      <description>username used to log in level 4</description>
       <initValue>'nora-qa'</initValue>
       <name>Gusername</name>
    </GlobalVariableEntity>

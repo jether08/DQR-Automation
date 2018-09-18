@@ -15,7 +15,7 @@
       <guid>c2759a18-a34a-41b3-9152-045d38e3a175</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/01 Authentication/Auth1</testCaseId>
+      <testCaseId>Test Cases/Authentication/Auth1</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -33,7 +33,7 @@
       <guid>1aff543e-b027-414f-bdbd-c891ab0bc3f3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/01 Authentication/Auth2</testCaseId>
+      <testCaseId>Test Cases/Authentication/Auth2</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -45,7 +45,7 @@
       <guid>498e70ee-b9b6-46ff-b39f-ed8bd47d03b2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/01 Authentication/Auth3</testCaseId>
+      <testCaseId>Test Cases/Authentication/Auth3</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -63,7 +63,7 @@
       <guid>b5e21d64-d9fd-449e-8f68-65456ff78293</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/01 Authentication/Auth4</testCaseId>
+      <testCaseId>Test Cases/Authentication/Auth4</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -81,7 +81,7 @@
       <guid>53ead67a-3b03-4259-b175-8f65b9743952</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/01 Authentication/Auth5</testCaseId>
+      <testCaseId>Test Cases/Authentication/Auth5</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

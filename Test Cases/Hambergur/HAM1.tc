@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User is logged out and actions the hamburger successfully (sidemenu opens)</description>
+   <name>HAM1</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ca14a61c-f52e-4e98-a71d-2bd8456449e1</testCaseGuid>
+</TestCaseEntity>
