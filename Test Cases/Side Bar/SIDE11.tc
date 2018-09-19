@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User is logged out and tries to action 'SIDEBAR.HELP'</description>
+   <name>SIDE11</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6dbd538-fccc-497f-8e33-1dd50de11be8</testCaseGuid>
+</TestCaseEntity>
