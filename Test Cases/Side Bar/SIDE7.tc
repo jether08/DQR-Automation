@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User is logged out and tries to make a deposit</description>
+   <name>SIDE7</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>12b34fda-74c9-457b-b463-e97c451a7612</testCaseGuid>
+</TestCaseEntity>
