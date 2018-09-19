@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User is logged out and tries to make a withdrawal</description>
+   <name>SIDE8</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a207d6fc-a2cc-4232-ba78-9895ce4ca9d3</testCaseGuid>
+</TestCaseEntity>

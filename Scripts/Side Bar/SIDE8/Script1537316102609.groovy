@@ -22,15 +22,13 @@ WebUI.waitForPageLoad(8)
 WebUI.click(findTestObject('trade.html/Hamburger Menu'))
 
 
-if (WebUI.verifyElementNotVisible(findTestObject('SideMenuBar/Deposit'),FailureHandling.CONTINUE_ON_FAILURE)) {
+if (WebUI.verifyElementNotVisible(findTestObject('SideMenuBar/Withdraw'),FailureHandling.CONTINUE_ON_FAILURE)) {
 	
-	println('Deposit SideMenu Bar is not visible with logout User')
-} 
-else 
+	println('Withdraw SideMenu Bar is not visible with logout User')
+}
+else
 {
 
-	println('Deposit SideMenu Bar is visible even logout User')
+	println('Withdraw SideMenu Bar is visible even logout User')
 }
-
-
 
