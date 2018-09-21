@@ -15,9 +15,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\Jeth\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Side Bar\\SIDE10\\20180918_225449\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\Jeth\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Jira Ticket\\DQRXD-186\\20180921_162710\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Side Bar/SIDE10', new TestCaseBinding('Test Cases/Side Bar/SIDE10',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Jira Ticket/DQRXD-186', new TestCaseBinding('Test Cases/Jira Ticket/DQRXD-186',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

@@ -42,11 +42,13 @@ public class SwitchiFrame {
 	def chart() {
 		WebDriver driver = DriverFactory.getWebDriver()
 
-		WebElement select = driver.findElement(By.xpath('/html/body/div[1]/div[2]/header2/div[1]/div/ul/li[contains(@class,"instrument-DQR30EUR")]'))
+		WebElement select = driver.findElement(By.xpath('/html/body/div[1]/div[2]/header2/div[1]/div/ul/li[contains(@class,"instrument-DQR30BTC")]'))
 		select.click()
 
-		String currency = "DQR30EUR"
+		String currency = "DQR30BTC"
 		
+		WebUI.delay(15)
+
 		//WebElement iframe = driver.findElement(By.xpath('//div[contains(@id,"tradingview")]//iframe'));
 		//WebElement iframe = driver.findElement(By.xpath('//*[@id="tradingview_46ed0"]/iframe'));
 		//WebElement frame = driver.findElement(By.tagName("iframe"))
@@ -57,19 +59,17 @@ public class SwitchiFrame {
 		//wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.tagName("iframe"))));
 
 		// Waiting 30 seconds for an element to be present on the page, checking
-		
-		  // for its presence once every 5 seconds.
-		
-		  FluentWait <WebDriver> wait = new FluentWait <WebDriver> (driver)
-		  .withTimeout(60, TimeUnit.SECONDS)
-		  .pollingEvery(5, TimeUnit.SECONDS)
-		  .ignoring(NoSuchElementException.class);	
-		  
-		  		
-				
-		  
+
+		// for its presence once every 5 seconds.
+
+		/*FluentWait <WebDriver> wait = new FluentWait <WebDriver> (driver)
+				.withTimeout(90, TimeUnit.SECONDS)
+				.pollingEvery(5, TimeUnit.SECONDS)
+				.ignoring(NoSuchElementException.class);*/
+
 		//String chart = driver.findElement(By.xpath('//*[@id="chart-area"]/div/div[3]/table/tbody/tr[1]/td[2]/div/div[3]/div[1]')).getText();
 		//WebUI.switchToFrame(findTestObject('trade.html/Chart ifRame'), 15)
+		
 		String chart = WebUI.getText(findTestObject('trade.html/Chart Currency'))
 
 		//Verify if currency in the chart contains the selected currency text: “<ABCDEF>” in: //*[@id="chart-area"]/div/div[3]/table/tbody/tr[1]/td[2]/div/div[3]/div[1]/span

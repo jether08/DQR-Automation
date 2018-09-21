@@ -48,4 +48,11 @@
       <type>Main</type>
       <value>//*[@id=&quot;chart-area&quot;]/div/div[3]/table/tbody/tr[1]/td[2]/div/div[3]/div[1]/span</value>
    </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/trade.html/Chart ifRame</value>
+   </webElementProperties>
 </WebElementEntity>

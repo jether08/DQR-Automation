@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[starts-with(@id,&quot;tradingview_&quot;)]/iframe</value>
+         <value>//div[@id=&quot;ap-trading-view-chart&quot;]/iframe</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

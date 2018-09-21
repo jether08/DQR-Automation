@@ -14,7 +14,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 public class GlobalVariable {
      
     /**
-     * <p>Profile Staging : username used to log in</p>
+     * <p>Profile Staging : username used to log in level 4</p>
      */
     public static Object Gusername
      
