@@ -44,37 +44,26 @@ WebUI.setText(findTestObject('trade.html/PricePerBox'), '0.1')
 WebUI.click(findTestObject('trade.html/Place Order btn'))
 
 //Verify the Instrument entry in the Open Orders table
-WebElement instrument = driver.findElement(By.xpath('//*[@id="OrdersTable"]/tbody/tr[1]/td[1]'))
-String instrument_txt = instrument.getText()
-println(instrument_txt)
-if(instrument_txt.contains('DQR30BTC')){
-	KeywordUtil.markPassed('PASSED: Instrument is correct: '+ instrument_txt)
-}
-else{
-	KeywordUtil.markFailed('FAILED: Instrument is wrong: '+ instrument_txt)
-}
+CustomKeywords.'utility.verifyOpenOrders.verifyInstrument'()
 
 //Verify the Quantity
-WebElement qty = driver.findElement(By.xpath('//*[@id="OrdersTable"]/tbody/tr[1]/td[3]'))
- String qty_txt = qty.getText()
- println(qty_txt)
- if(qty_txt.contains('0.20000000')){
-	 KeywordUtil.markPassed('PASSED: Quantity is correct: '+ qty_txt)
- }
- else{
-	 KeywordUtil.markFailed('FAILED: Quantity is incorrect: '+ qty_txt)
- }
- 
- //Verify Price
- WebElement price = driver.findElement(By.xpath('//*[@id="OrdersTable"]/tbody/tr[1]/td[4]'))
- String price_txt = price.getText()
- println(price_txt)
-  if(price_txt.contains('0.10000000')){
-	  KeywordUtil.markPassed('PASSED: Price is correct: '+ price_txt)
-  }
-  else{
-	  KeywordUtil.markFailed('FAILED: Price is incorrect: '+ price_txt)
-  }
+CustomKeywords.'utility.verifyOpenOrders.verifyQty'()
+
+//Verify Price
+CustomKeywords.'utility.verifyOpenOrders.verifyPrice'()
+  
+//Verify Order Book
+List <WebElement> bidrows = driver.findElements(By.xpath('//div[@id="bidRows"]/span'))
+int bidrow_count = bidrows.size()
+println(bidrow_count)
+  
+for(i=1;i<=bidrow_count;i++){
+  String cellPrice = driver.findElement(By.xpath('//div[@id="bidRows"]/span['+i+']/div[1]')).getText()	  
+  String cellQty = driver.findElement(By.xpath('//div[@id="bidRows"]/span['+i+']/div[2]')).getText()
+  String cellQty = driver.findElement(By.xpath('//div[@id="bidRows"]/span['+i+']/div[2]')).getText()
+	  
+}
+  
   
 
 

@@ -16,6 +16,18 @@ def static "utility.SwitchiFrame.chart"() {
     (new utility.SwitchiFrame()).chart()
 }
 
+def static "utility.verifyOpenOrders.verifyInstrument"() {
+    (new utility.verifyOpenOrders()).verifyInstrument()
+}
+
+def static "utility.verifyOpenOrders.verifyQty"() {
+    (new utility.verifyOpenOrders()).verifyQty()
+}
+
+def static "utility.verifyOpenOrders.verifyPrice"() {
+    (new utility.verifyOpenOrders()).verifyPrice()
+}
+
 def static "utility.SelectCurrency.xrpbtc"() {
     (new utility.SelectCurrency()).xrpbtc()
 }

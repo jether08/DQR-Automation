@@ -46,7 +46,7 @@ public class SwitchiFrame {
 		select.click()
 
 		String currency = "DQR30BTC"
-		
+
 		WebUI.delay(15)
 
 		//WebElement iframe = driver.findElement(By.xpath('//div[contains(@id,"tradingview")]//iframe'));
@@ -63,13 +63,13 @@ public class SwitchiFrame {
 		// for its presence once every 5 seconds.
 
 		/*FluentWait <WebDriver> wait = new FluentWait <WebDriver> (driver)
-				.withTimeout(90, TimeUnit.SECONDS)
-				.pollingEvery(5, TimeUnit.SECONDS)
-				.ignoring(NoSuchElementException.class);*/
+		 .withTimeout(90, TimeUnit.SECONDS)
+		 .pollingEvery(5, TimeUnit.SECONDS)
+		 .ignoring(NoSuchElementException.class);*/
 
 		//String chart = driver.findElement(By.xpath('//*[@id="chart-area"]/div/div[3]/table/tbody/tr[1]/td[2]/div/div[3]/div[1]')).getText();
 		//WebUI.switchToFrame(findTestObject('trade.html/Chart ifRame'), 15)
-		
+
 		String chart = WebUI.getText(findTestObject('trade.html/Chart Currency'))
 
 		//Verify if currency in the chart contains the selected currency text: “<ABCDEF>” in: //*[@id="chart-area"]/div/div[3]/table/tbody/tr[1]/td[2]/div/div[3]/div[1]/span

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Testing buy limit, stop and market orders</description>
-   <name>DQRXD-186</name>
+   <description>Testing buy limit, stop and market orders
+All conditions are met</description>
+   <name>DQRXD-186 SC1</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b870f7ee-4d83-43ca-bb0c-a60192e9ed36</testCaseGuid>
