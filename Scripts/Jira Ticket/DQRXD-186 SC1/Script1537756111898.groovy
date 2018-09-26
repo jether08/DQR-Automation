@@ -31,7 +31,7 @@ WebUI.click(findTestObject('trade.html/Currency Selector'))
 WebElement currency = driver.findElement(By.xpath('/html/body/div[1]/div[2]/header2/div[1]/div/ul/li[contains(@class,"instrument-DQR30BTC")]'))
 currency.click()
 
-//Click Limit tab
+/*//Click Limit tab
 WebUI.click(findTestObject('trade.html/Limit tab'))
 
 //Enter Buy Amount
@@ -50,19 +50,10 @@ CustomKeywords.'utility.verifyOpenOrders.verifyInstrument'()
 CustomKeywords.'utility.verifyOpenOrders.verifyQty'()
 
 //Verify Price
-CustomKeywords.'utility.verifyOpenOrders.verifyPrice'()
+CustomKeywords.'utility.verifyOpenOrders.verifyPrice'()*/
   
 //Verify Order Book
-List <WebElement> bidrows = driver.findElements(By.xpath('//div[@id="bidRows"]/span'))
-int bidrow_count = bidrows.size()
-println(bidrow_count)
-  
-for(i=1;i<=bidrow_count;i++){
-  String cellPrice = driver.findElement(By.xpath('//div[@id="bidRows"]/span['+i+']/div[1]')).getText()	  
-  String cellQty = driver.findElement(By.xpath('//div[@id="bidRows"]/span['+i+']/div[2]')).getText()
-  String cellQty = driver.findElement(By.xpath('//div[@id="bidRows"]/span['+i+']/div[2]')).getText()
-	  
-}
+CustomKeywords.'utility.verifyOrderBook.verifyPrice'()
   
   
 

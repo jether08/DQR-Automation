@@ -14,13 +14,13 @@
    <testCaseLink>
       <guid>62b5381b-326e-44f2-a0fb-3274792c0164</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Jira Ticket/DQRXD-144</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>21e65660-7b88-47d3-907f-73c130e9a11e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Jira Ticket/DQRXD-145</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -38,7 +38,7 @@
    <testCaseLink>
       <guid>31d600c8-9ef9-4007-9b5e-bed1f29a24b9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Jira Ticket/DQRXD-147</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -98,7 +98,7 @@
    <testCaseLink>
       <guid>8da4ebb8-2eb0-4cb8-8e47-685b787c2cd1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Jira Ticket/DQRXD-148</testCaseId>
    </testCaseLink>
    <testCaseLink>

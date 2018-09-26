@@ -16,6 +16,10 @@ def static "utility.SwitchiFrame.chart"() {
     (new utility.SwitchiFrame()).chart()
 }
 
+def static "utility.verifyOrderBook.verifyPrice"() {
+    (new utility.verifyOrderBook()).verifyPrice()
+}
+
 def static "utility.verifyOpenOrders.verifyInstrument"() {
     (new utility.verifyOpenOrders()).verifyInstrument()
 }

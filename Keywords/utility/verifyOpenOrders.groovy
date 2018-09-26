@@ -27,24 +27,24 @@ import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 
 public class verifyOpenOrders {
-	
-	@Keyword	
+
+	@Keyword
 	//Verify the Instrument entry in the Open Orders table
 	def verifyInstrument(){
-		
+
 		WebDriver driver = DriverFactory.getWebDriver()
-		
+
 		WebElement instrument = driver.findElement(By.xpath('//*[@id="OrdersTable"]/tbody/tr[1]/td[1]'))
 		String instrument_txt = instrument.getText()
 		println(instrument_txt)
-		 if(instrument_txt.contains('DQR30BTC')){
-			 KeywordUtil.markPassed('PASSED: Instrument is correct: '+ instrument_txt)
-		 }
-		 else{
-			 KeywordUtil.markFailed('FAILED: Instrument is wrong: '+ instrument_txt)
-		 }
+		if(instrument_txt.contains('DQR30BTC')){
+			KeywordUtil.markPassed('PASSED: Instrument is correct: '+ instrument_txt)
+		}
+		else{
+			KeywordUtil.markFailed('FAILED: Instrument is wrong: '+ instrument_txt)
+		}
 	}
-	
+
 	@Keyword
 	//Verify the Quantity
 	def verifyQty(){
@@ -52,30 +52,30 @@ public class verifyOpenOrders {
 		WebElement qty = driver.findElement(By.xpath('//*[@id="OrdersTable"]/tbody/tr[1]/td[3]'))
 		String qty_txt = qty.getText()
 		println(qty_txt)
-		
-		 if(qty_txt.contains('0.20000000')){
-			 KeywordUtil.markPassed('PASSED: Quantity is correct: '+ qty_txt)
-		 }
-		 else{
-			 KeywordUtil.markFailed('FAILED: Quantity is incorrect: '+ qty_txt)
-		 }
+
+		if(qty_txt.contains('0.20000000')){
+			KeywordUtil.markPassed('PASSED: Quantity is correct: '+ qty_txt)
+		}
+		else{
+			KeywordUtil.markFailed('FAILED: Quantity is incorrect: '+ qty_txt)
+		}
 	}
-	
+
 	@Keyword
 	//Verify Price
 	def verifyPrice(){
-	
+
 		WebDriver driver = DriverFactory.getWebDriver()
 		WebElement price = driver.findElement(By.xpath('//*[@id="OrdersTable"]/tbody/tr[1]/td[4]'))
 		String price_txt = price.getText()
 		println(price_txt)
-		
+
 		if(price_txt.contains('0.10000000')){
-			  KeywordUtil.markPassed('PASSED: Price is correct: '+ price_txt)
+			KeywordUtil.markPassed('PASSED: Price is correct: '+ price_txt)
 		}
 		else{
-			  KeywordUtil.markFailed('FAILED: Price is incorrect: '+ price_txt)
+			KeywordUtil.markFailed('FAILED: Price is incorrect: '+ price_txt)
 		}
 	}
-	
+
 }
