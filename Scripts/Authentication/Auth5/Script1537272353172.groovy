@@ -46,7 +46,7 @@ WebUI.click(findTestObject('Login/button_Log_In'))
 WebUI.delay(5)
 
 //Wait for 2s and verify if error message is displayed
-WebUI.verifyElementText(findTestObject('Login/error_mesage'), 'Wrong credentials')
+WebUI.verifyElementText(findTestObject('Login/error_mesage'), 'Invalid username or password')
 
 WebUI.comment('User Failed to Login due to Incorrect Password')
 

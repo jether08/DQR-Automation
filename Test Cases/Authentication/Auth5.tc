@@ -3,7 +3,7 @@
    <description>User attempts login, which fails due to incorrect password</description>
    <name>Auth5</name>
    <tag></tag>
-   <comment></comment>
+   <comment>User Failed to Login due to Incorrect Password</comment>
    <testCaseGuid>e2ca2cdf-efe0-49be-bac8-61a357de8d46</testCaseGuid>
    <variable>
       <defaultValue>'luke'</defaultValue>

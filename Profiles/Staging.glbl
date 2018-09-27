@@ -16,12 +16,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://test.dqr-private.com/login.html'</initValue>
+      <initValue>'https://test.dqr-private.com/login.html'</initValue>
       <name>GloginUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Staging URL</description>
-      <initValue>'http://test.dqr-private.com'</initValue>
+      <initValue>'https://test.dqr-private.com'</initValue>
       <name>Url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

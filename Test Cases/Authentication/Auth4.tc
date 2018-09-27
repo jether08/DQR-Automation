@@ -3,7 +3,7 @@
    <description>User attempts login, which fails due to incorrect userid</description>
    <name>Auth4</name>
    <tag></tag>
-   <comment></comment>
+   <comment>User Failed to Login due to Incorrect userid</comment>
    <testCaseGuid>2bdfffec-6199-4eb0-900c-4379f32e907e</testCaseGuid>
    <variable>
       <defaultValue>'luke'</defaultValue>
